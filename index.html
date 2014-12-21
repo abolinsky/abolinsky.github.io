@@ -134,14 +134,20 @@
     // Clear canvas
     ctx.clearRect(0,0,canvas.width,canvas.height);
     // Draw segments
-    ctx.strokeStyle = "#FFF";
+    if (activateMouse) {
+      ctx.strokeStyle = "#FFF";
+    } else {
+      ctx.strokeStyle = "#000";
+    }
     ctx.fillStyle = "#ffd700";
     for(var i=0;i<segments.length;i++){
       var seg = segments[i];
       ctx.beginPath();
       ctx.moveTo(seg.a.x,seg.a.y);
       ctx.lineTo(seg.b.x,seg.b.y);
-      ctx.stroke();
+      if (i === 6 || i === 7 || i === 10 || i === 11) {
+        ctx.stroke();
+      }
     }
     ctx.fill();
 
@@ -185,7 +191,7 @@
     if (activateMouse) {
       ctx.fillStyle = "#ffd700";
     } else {
-      ctx.fillStyle = "#999";
+      ctx.fillStyle = "#333";
     }
     ctx.beginPath();
     if (!activateMouse || activateMouse) {
@@ -257,6 +263,12 @@
         }
         ctx.stroke();
 
+        if (activateMouse) {
+          ctx.font = "120px Calibri";
+          ctx.fillStyle = "#000";
+          ctx.fillText("Alexander Bolinsky", canvas.width/2, 165);
+          ctx.textAlign = "center";
+        }
   }
 
   function drawPolygon(polygon,ctx,fillStyle){
@@ -279,16 +291,16 @@
   {a:{x:canvas.width+1,y:-1}, b:{x:-1,y:-1}},
 
   // Resume
-  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)-150}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)-150}},
-  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)-150}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)+150}},
-  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)+150}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)+150}},
-  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)+150}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)-150}},
+  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)-90}},
+  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)+210}},
+  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)+210}},
+  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)-90}},
 
   // Projects
-  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)-150}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)-150}},
-  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)-150}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)+150}},
-  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)+150}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)+150}},
-  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)+150}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)-150}},
+  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)-90}},
+  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)+210}},
+  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)+210}},
+  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)-90}},
 
   ];
 

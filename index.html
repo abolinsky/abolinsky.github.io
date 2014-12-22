@@ -221,7 +221,7 @@
     }
 
       if (posOfLight > .5) {
-        posOfLight -= posOfLight/(canvas.height/8);
+        posOfLight -= posOfLight/(canvas.height/9);
       } else {
         activateMouse = 1;
       }
@@ -253,7 +253,7 @@
         ctx.beginPath();
         ctx.moveTo(canvas.width/2,-1);
         if (!activateMouse || activateMouse) {
-          ctx.lineTo(canvas.width/2,posOfLight+50);
+          ctx.lineTo(canvas.width/2,posOfLight+40);
         } else {
           if (Mouse.x < canvas.width/2) {
             ctx.lineTo((canvas.width/2)-(90*Math.cos(calculateTheta())),90*Math.sin(calculateTheta()));

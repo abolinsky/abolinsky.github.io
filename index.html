@@ -154,7 +154,7 @@
     // Sight Polygons
     var fuzzyRadius = 20;
     if (!activateMouse || activateMouse) {
-      var polygons = [getSightPolygon((canvas.width/2),posOfLight+50)];
+      var polygons = [getSightPolygon((canvas.width/2),posOfLight+100)];
     } else {
       if (Mouse.x < canvas.width/2) {
         var polygons = [getSightPolygon((canvas.width/2)-(100*Math.cos(calculateTheta())),100*Math.sin(calculateTheta()))];
@@ -168,7 +168,7 @@
       var dy = Math.sin(angle)*fuzzyRadius;
 
       if (!activateMouse || activateMouse) {
-        polygons.push(getSightPolygon((canvas.width/2)+dx,posOfLight+50+dy));
+        polygons.push(getSightPolygon((canvas.width/2)+dx,posOfLight+100+dy));
       } else {
         if (Mouse.x < canvas.width/2) {
           polygons.push(getSightPolygon((canvas.width/2)-(100*Math.cos(calculateTheta()))+dx,100*Math.sin(calculateTheta())+dy));
@@ -195,7 +195,7 @@
     }
     ctx.beginPath();
     if (!activateMouse || activateMouse) {
-      ctx.arc((canvas.width/2), posOfLight+50, 10, 0, 2*Math.PI, false);
+      ctx.arc((canvas.width/2), posOfLight+100, 10, 0, 2*Math.PI, false);
     } else {
       if (Mouse.x < canvas.width/2) {
         ctx.arc((canvas.width/2)-(100*Math.cos(calculateTheta())), 100*Math.sin(calculateTheta()), 10, 0, 2*Math.PI, false);
@@ -209,7 +209,7 @@
       var dy = Math.sin(angle)*fuzzyRadius;
       ctx.beginPath();
       if (!activateMouse || activateMouse) {
-        ctx.arc((canvas.width/2), posOfLight+50, 2, 0, 2*Math.PI, false);
+        ctx.arc((canvas.width/2), posOfLight+100, 2, 0, 2*Math.PI, false);
       } else {
         if (Mouse.x < canvas.width/2) {
           ctx.arc((canvas.width/2)-(100*Math.cos(calculateTheta())), 100*Math.sin(calculateTheta()), 2, 0, 2*Math.PI, false);
@@ -221,7 +221,7 @@
     }
 
       if (posOfLight > .5) {
-        posOfLight -= posOfLight/(canvas.height/9);
+        posOfLight -= posOfLight/(canvas.height/8);
       } else {
         activateMouse = 1;
       }
@@ -253,7 +253,7 @@
         ctx.beginPath();
         ctx.moveTo(canvas.width/2,-1);
         if (!activateMouse || activateMouse) {
-          ctx.lineTo(canvas.width/2,posOfLight+40);
+          ctx.lineTo(canvas.width/2,posOfLight+90);
         } else {
           if (Mouse.x < canvas.width/2) {
             ctx.lineTo((canvas.width/2)-(90*Math.cos(calculateTheta())),90*Math.sin(calculateTheta()));
@@ -264,10 +264,22 @@
         ctx.stroke();
 
         if (activateMouse) {
-          ctx.font = "120px Calibri";
+          ctx.font = "110px Calibri";
           ctx.fillStyle = "#000";
-          ctx.fillText("Alexander Bolinsky", canvas.width/2, 165);
+          ctx.fillText("Alexander Bolinsky", canvas.width/2, canvas.height/3);
           ctx.textAlign = "center";
+
+          /*
+
+          ctx.font = "30px Calibri";
+          ctx.fillStyle = "#c111";
+          ctx.fillText("Hi! Welcome to my page.", canvas.width/2, canvas.height/2 - 20);
+          ctx.fillText("I am an undergraduate at Washington University in St. Louis studying", canvas.width/2, canvas.height/2 + 20);
+          ctx.fillText("computer science and engineering. I am interested in designing at the", canvas.width/2, canvas.height/2 + 50);
+          ctx.fillText("intersection between hardware and software. I ", canvas.width/2, canvas.height/2 + 80);
+          ctx.textAlign = "center";
+
+          */
         }
   }
 
@@ -282,6 +294,8 @@
     ctx.fill();
   }
 
+  var offset = 50;
+
   // LINE SEGMENTS
   var segments = [
   // Border
@@ -291,16 +305,16 @@
   {a:{x:canvas.width+1,y:-1}, b:{x:-1,y:-1}},
 
   // Resume
-  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)-90}},
-  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)+210}},
-  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)+210}},
-  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)-90}},
+  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)-90 + offset}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)-90 + offset}},
+  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)-90 + offset}, b:{x:(canvas.width/2)-100,y:(canvas.height/2)+210 + offset}},
+  {a:{x:(canvas.width/2)-100,y:(canvas.height/2)+210 + offset}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)+210 + offset}},
+  {a:{x:(canvas.width/2)-300,y:(canvas.height/2)+210 + offset}, b:{x:(canvas.width/2)-300,y:(canvas.height/2)-90 + offset}},
 
   // Projects
-  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)-90}},
-  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)-90}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)+210}},
-  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)+210}},
-  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)+210}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)-90}},
+  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)-90 + offset}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)-90 + offset}},
+  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)-90 + offset}, b:{x:(canvas.width/2)+100,y:(canvas.height/2)+210 + offset}},
+  {a:{x:(canvas.width/2)+100,y:(canvas.height/2)+210 + offset}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)+210 + offset}},
+  {a:{x:(canvas.width/2)+300,y:(canvas.height/2)+210 + offset}, b:{x:(canvas.width/2)+300,y:(canvas.height/2)-90 + offset}},
 
   ];
 

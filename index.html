@@ -154,7 +154,7 @@
     // Sight Polygons
     var fuzzyRadius = 20;
     if (!activateMouse || activateMouse) {
-      var polygons = [getSightPolygon((canvas.width/2),posOfLight+100)];
+      var polygons = [getSightPolygon((canvas.width/2),posOfLight+50)];
     } else {
       if (Mouse.x < canvas.width/2) {
         var polygons = [getSightPolygon((canvas.width/2)-(100*Math.cos(calculateTheta())),100*Math.sin(calculateTheta()))];
@@ -168,7 +168,7 @@
       var dy = Math.sin(angle)*fuzzyRadius;
 
       if (!activateMouse || activateMouse) {
-        polygons.push(getSightPolygon((canvas.width/2)+dx,posOfLight+100+dy));
+        polygons.push(getSightPolygon((canvas.width/2)+dx,posOfLight+50+dy));
       } else {
         if (Mouse.x < canvas.width/2) {
           polygons.push(getSightPolygon((canvas.width/2)-(100*Math.cos(calculateTheta()))+dx,100*Math.sin(calculateTheta())+dy));
@@ -195,7 +195,7 @@
     }
     ctx.beginPath();
     if (!activateMouse || activateMouse) {
-      ctx.arc((canvas.width/2), posOfLight+100, 10, 0, 2*Math.PI, false);
+      ctx.arc((canvas.width/2), posOfLight+50, 10, 0, 2*Math.PI, false);
     } else {
       if (Mouse.x < canvas.width/2) {
         ctx.arc((canvas.width/2)-(100*Math.cos(calculateTheta())), 100*Math.sin(calculateTheta()), 10, 0, 2*Math.PI, false);
@@ -209,7 +209,7 @@
       var dy = Math.sin(angle)*fuzzyRadius;
       ctx.beginPath();
       if (!activateMouse || activateMouse) {
-        ctx.arc((canvas.width/2), posOfLight+100, 2, 0, 2*Math.PI, false);
+        ctx.arc((canvas.width/2), posOfLight+50, 2, 0, 2*Math.PI, false);
       } else {
         if (Mouse.x < canvas.width/2) {
           ctx.arc((canvas.width/2)-(100*Math.cos(calculateTheta())), 100*Math.sin(calculateTheta()), 2, 0, 2*Math.PI, false);
@@ -253,7 +253,7 @@
         ctx.beginPath();
         ctx.moveTo(canvas.width/2,-1);
         if (!activateMouse || activateMouse) {
-          ctx.lineTo(canvas.width/2,posOfLight+90);
+          ctx.lineTo(canvas.width/2,posOfLight+50);
         } else {
           if (Mouse.x < canvas.width/2) {
             ctx.lineTo((canvas.width/2)-(90*Math.cos(calculateTheta())),90*Math.sin(calculateTheta()));

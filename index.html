@@ -2,64 +2,337 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <title>abolinsky.github.io by abolinsky</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="js/vendor/modernizr.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+
+      body {
+        font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+        font-weight: 100;
+        font-size: 20px;
+        background-color: #ecf0f1;
+      }
+
+      .parallax-background {
+        height: 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+      }
+
+      .intro-text {
+        font-size: 50px;
+        color: #222;
+        text-align: center;
+        margin-top: 5%;
+      }
+
+      .row {
+        font-size: 20px;
+        text-align: justify;
+        padding-top: 20px;
+      }
+
+    </style>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>abolinsky.github.io</h1>
-        <p></p>
 
-
-        <p class="view"><a href="https://github.com/abolinsky">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-my-page" class="anchor" href="#welcome-to-my-page"><span class="octicon octicon-link"></span></a>Welcome to my page.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div id="myModal" class="reveal-modal small" data-reveal>
+      <img src="img/curriculum_vitae_dec_22.pdf">
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+    <canvas id="canvas" style="position: absolute; top: 0vh; left: 0vw; background-color: #222"></canvas>
+
+    <div id="background" class="parallax-background">
+      <br>
+      <div class="intro-text"> Alexander Bolinsky
+        <div class="row">
+          <div class="small-10 small-centered columns">
+            <h5>I am a Junior at <b style="color: #222">Washington University in St. Louis</b> studying
+              <b style="color: #f1c40f">computer science and engineering</b>. My interests include
+              <b style="color: #8e44ad">embedded systems</b> and <b style="color: #2980b9">hardware design</b>,
+              <b style="color: #e67e22">brain-computer interfaces</b>, <b style="color: #27ae60">robotic sensing</b>,
+              <b style="color: #1abc9c">software design</b>, and <b style="color: #c0392b">graphic and visual design</b>.
+              I am eager to develop my skills and gain experience in any of these areas.
+            </h5>
+            <br>
+            <h5>
+              I am currently working on two projects:
+            </h5>
+            <h5>
+              A <b>haptic/force feedback glove</b> for use with VR headsets such as the Oculus Rift. Enabling a user to
+              receive physical feedback from objects in the virtual world has significant applications in medicine,
+              gaming, remote social interactions, and art.
+            </h5>
+            <h5>
+              A <b>segway</b>. The physical construction of the prototype is finished, yet the programming of the PID controller
+              and gyro/accelerometer filter still needs work.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="small-12 small-centered columns">
+          <ul class="button-group even-3">
+            <li><a href="#" class="button secondary" data-reveal-id="myModal">CV</a></li>
+            <li><a href="#" class="button secondary">Projects</a></li>
+            <li><a href="mailto:ahbolinsky@gmail.com" class="button secondary">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+    // Find intersection of RAY & SEGMENT
+    function getIntersection(ray,segment){
+      // RAY in parametric: Point + Delta*T1
+      var r_px = ray.a.x;
+      var r_py = ray.a.y;
+      var r_dx = ray.b.x-ray.a.x;
+      var r_dy = ray.b.y-ray.a.y;
+      // SEGMENT in parametric: Point + Delta*T2
+      var s_px = segment.a.x;
+      var s_py = segment.a.y;
+      var s_dx = segment.b.x-segment.a.x;
+      var s_dy = segment.b.y-segment.a.y;
+      // Are they parallel? If so, no intersect
+      var r_mag = Math.sqrt(r_dx*r_dx+r_dy*r_dy);
+      var s_mag = Math.sqrt(s_dx*s_dx+s_dy*s_dy);
+      if(r_dx/r_mag==s_dx/s_mag && r_dy/r_mag==s_dy/s_mag){
+        // Unit vectors are the same.
+        return null;
+      }
+      var T2 = (r_dx*(s_py-r_py) + r_dy*(r_px-s_px))/(s_dx*r_dy - s_dy*r_dx);
+      var T1 = (s_px+s_dx*T2-r_px)/r_dx;
+      // Must be within parametic whatevers for RAY/SEGMENT
+      if(T1<0) return null;
+      if(T2<0 || T2>1) return null;
+      // Return the POINT OF INTERSECTION
+      return {
+        x: r_px+r_dx*T1,
+        y: r_py+r_dy*T1,
+        param: T1
+      };
+    }
+
+    function getSightPolygon(sightX,sightY){
+      // Get all unique points
+      var points = (function(segments){
+        var a = [];
+        segments.forEach(function(seg){
+          a.push(seg.a,seg.b);
+        });
+        return a;
+      })(segments);
+      var uniquePoints = (function(points){
+        var set = {};
+        return points.filter(function(p){
+          var key = p.x+","+p.y;
+          if(key in set){
+            return false;
+          }else{
+            set[key]=true;
+            return true;
+          }
+        });
+      })(points);
+      // Get all angles
+      var uniqueAngles = [];
+      for(var j=0;j<uniquePoints.length;j++){
+        var uniquePoint = uniquePoints[j];
+        var angle = Math.atan2(uniquePoint.y-sightY,uniquePoint.x-sightX);
+        uniquePoint.angle = angle;
+        uniqueAngles.push(angle-0.00001,angle,angle+0.00001);
+      }
+      // RAYS IN ALL DIRECTIONS
+      var intersects = [];
+      for(var j=0;j<uniqueAngles.length;j++){
+        var angle = uniqueAngles[j];
+        // Calculate dx & dy from angle
+        var dx = Math.cos(angle);
+        var dy = Math.sin(angle);
+        // Ray from center of screen to mouse
+        var ray = {
+          a:{x:sightX,y:sightY},
+          b:{x:sightX+dx,y:sightY+dy}
+        };
+        // Find CLOSEST intersection
+        var closestIntersect = null;
+        for(var i=0;i<segments.length;i++){
+          var intersect = getIntersection(ray,segments[i]);
+          if(!intersect) continue;
+          if(!closestIntersect || intersect.param<closestIntersect.param){
+            closestIntersect=intersect;
+          }
+        }
+        // Intersect angle
+        if(!closestIntersect) continue;
+        closestIntersect.angle = angle;
+        // Add to list of intersects
+        intersects.push(closestIntersect);
+      }
+      // Sort intersects by angle
+      intersects = intersects.sort(function(a,b){
+        return a.angle-b.angle;
+      });
+      // Polygon is intersects, in order of angle
+      return intersects;
+    }
+    ///////////////////////////////////////////////////////
+    // DRAWING
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var posOfLight = canvas.height+15;
+    var activateMouse = 0;
+    function calculateTheta() {
+      var x = Math.abs((canvas.width/2)-Mouse.x);
+      var y = Mouse.y;
+      var theta = Math.atan(y/x);
+      return theta;
+    }
+    function draw(){
+      // Clear canvas
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+
+      segments[4].a.x = (canvas.width/2)-10;
+      segments[4].a.y = 52;
+      segments[4].b.x = (canvas.width/2)+10;
+      segments[4].b.y = 52;
+
+      if (activateMouse) {
+        document.getElementById('background').style.display = 'inline';
+        document.getElementById('canvas').style.backgroundColor = '#ecf0f1';
+        ctx.strokeStyle = "#ecf0f1";
+        ctx.fillStyle = "#ecf0f1";
+      } else {
+        document.getElementById('background').style.display = 'none';
+        document.getElementById('canvas').style.backgroundColor = '#000';
+        ctx.strokeStyle = "#000";
+        ctx.fillStyle = "#000";
+      }
+
+      // Draw segments
+      for(var i=0;i<segments.length;i++){
+        var seg = segments[i];
+        ctx.beginPath();
+        ctx.moveTo(seg.a.x,seg.a.y);
+        ctx.lineTo(seg.b.x,seg.b.y);
+        ctx.stroke();
+      }
+      ctx.fill();
+      // Sight Polygons
+      var fuzzyRadius = 10;
+      var polygon = [getSightPolygon((canvas.width/2),posOfLight+50)];
+
+      // DRAW AS A GIANT POLYGON
+      if (activateMouse) {
+        drawPolygon(polygon[0],ctx,"#CCC");
+      }
+      // Light rising
+      // Draw red dots
+      if (activateMouse) {
+        ctx.fillStyle = "#ffd700";
+      } else {
+        ctx.fillStyle = "#333";
+      }
+      ctx.beginPath();
+      ctx.arc((canvas.width/2), posOfLight+50, 10, 0, 2*Math.PI, false);
+      ctx.fill();
+
+      ctx.fillStyle = "#111";
+      ctx.beginPath();
+      ctx.arc((canvas.width/2), posOfLight+53, 16, 0, Math.PI, true);
+      ctx.fill();
+
+
+      for(var angle=0;angle<Math.PI*2;angle+=(Math.PI*2)/10){
+        var dx = Math.cos(angle)*fuzzyRadius;
+        var dy = Math.sin(angle)*fuzzyRadius;
+        ctx.beginPath();
+        ctx.arc((canvas.width/2), posOfLight+50, 2, 0, 2*Math.PI, false);
+        ctx.fill();
+      }
+
+      if (posOfLight > .5) {
+        posOfLight -= posOfLight/(canvas.height/8);
+      } else {
+        activateMouse = 1;
+      }
+
+      ctx.strokeStyle = "#000";
+      ctx.lineWidth = "1";
+      ctx.beginPath();
+      ctx.moveTo(canvas.width/2,-1);
+      ctx.lineTo(canvas.width/2,posOfLight+37);
+      ctx.stroke();
+
+    }
+
+    // LINE SEGMENTS
+    var segments = [
+    // Border
+  {a:{x:-1,y:-1}, b:{x:-1,y:canvas.height+1}},
+{a:{x:-1,y:canvas.height+1}, b:{x:canvas.width+1,y:canvas.height+1}},
+{a:{x:canvas.width+1,y:canvas.height+1}, b:{x:canvas.width+1,y:-1}},
+{a:{x:canvas.width+1,y:-1}, b:{x:-1,y:-1}},
+
+{a:{x:0,y:0}, b:{x:0,y:0}}
+];
+
+    function drawPolygon(polygon,ctx,fillStyle){
+      ctx.fillStyle = fillStyle;
+      ctx.beginPath();
+      ctx.moveTo(polygon[0].x,polygon[0].y);
+      for(var i=1;i<polygon.length;i++){
+        var intersect = polygon[i];
+        ctx.lineTo(intersect.x,intersect.y);
+      }
+      ctx.fill();
+    }
+
+    window.onload = setInterval(draw,1);
+
+    // MOUSE
+    var Mouse = {
+      x: canvas.width/2,
+      y: canvas.height/2
+    };
+
+    canvas.onmousemove = function(event){
+      Mouse.x = event.clientX;
+      Mouse.y = event.clientY;
+    };
+
+  </script>
+
   </body>
 </html>

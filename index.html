@@ -19,7 +19,6 @@
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
     font-weight: 100;
     font-size: 20px;
-    background-color: #ecf0f1;
   }
 
   .parallax-background {
@@ -54,10 +53,6 @@
 </head>
 
 <body>
-
-  <div id="myModal" class="reveal-modal tiny" data-reveal>
-    <img src="img/curriculum_vitae_dec_22.pdf">
-  </div>
 
   <canvas id="canvas" style="position: absolute; top: 0vh; left: 0vw; background-color: #222"></canvas>
 
@@ -97,9 +92,9 @@
     <div class="row">
       <div class="small-12 small-centered columns">
         <ul class="button-group even-3">
-          <li><a href="#" class="button secondary" data-reveal-id="myModal">CV</a></li>
+          <li><a href="img/resume.pdf" download class="button secondary">Resume</a></li>
 	  <li><a href="https://github.com/abolinsky" class="button secondary">GitHub</a></li>
-          <li><a href="mailto:ahbolinsky@gmail.com" class="button secondary">Let's Grab Coffee</a></li>
+          <li><a href="mailto:ahbolinsky@gmail.com" class="button secondary">Grab Coffee</a></li>
         </ul>
       </div>
     </div>
@@ -226,9 +221,9 @@
         segments[4].b.y = 52;
         if (activateMouse) {
           document.getElementById('background').style.display = 'inline';
-          document.getElementById('canvas').style.backgroundColor = '#ecf0f1';
-          ctx.strokeStyle = "#ecf0f1";
-          ctx.fillStyle = "#ecf0f1";
+          document.getElementById('canvas').style.backgroundColor = '#fff';
+          ctx.strokeStyle = "#e9e9e9";
+          ctx.fillStyle = "#e9e9e9";
         } else {
           document.getElementById('background').style.display = 'none';
           document.getElementById('canvas').style.backgroundColor = '#000';
@@ -256,7 +251,22 @@
         if (activateMouse) {
           ctx.fillStyle = "#ffd700";
         } else {
-          ctx.fillStyle = "#333";
+          if (posOfLight < canvas.height-30 && posOfLight > canvas.height-200 ||
+              posOfLight < canvas.height-300 && posOfLight > canvas.height-350 ||
+              posOfLight < 200 && posOfLight > 180 ||
+              posOfLight < 50 && posOfLight > 40 ||
+              posOfLight < 30 && posOfLight > 25 ||
+              posOfLight < 22 && posOfLight > 20 ||
+              posOfLight < 19 && posOfLight > 18 ||
+              posOfLight < 16 && posOfLight > 15 ||
+              posOfLight < 12.5 && posOfLight > 12 ||
+              posOfLight < 11.5 && posOfLight > 11 ||
+              posOfLight < 10.2 && posOfLight > 10.5
+              ) {
+            ctx.fillStyle = "#ffd700";
+          } else {
+            ctx.fillStyle = "#333";
+          }
         }
         ctx.beginPath();
         ctx.arc((canvas.width/2), posOfLight+50, 10, 0, 2*Math.PI, false);

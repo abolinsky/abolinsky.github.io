@@ -11,7 +11,6 @@ date: 2017-06-24
     {% if post.categories contains 'codeblog' %}
       <article class="post">
 
-        <h1>{{ post.title }}</h1>
         <h5>{{ page.date | date: "%-d %B %Y" }}</h5>
 
         <div class="entry">

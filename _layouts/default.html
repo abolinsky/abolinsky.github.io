@@ -30,13 +30,10 @@
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
         {% elseif page.category == "home" %}
-        hello
-          <h2><a href="{{ site.url }}"><strong>home</strong></a><a class="view" href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
+          <h2><a href="{{ site.url }}"><strong>home</strong></a><a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
         {% elseif page.category == "codeblog" %}
-        hellooo
           <h2><a class="view" href="{{ site.url }}"><strong>home</strong></a><a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
         {% elseif page.type == "post" %}
-        hellooooooo
           <h2><a class="view" href="{{ site.url }}"><strong>home</strong></a><a class="view" href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
         {% endif %}
 

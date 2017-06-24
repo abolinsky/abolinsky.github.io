@@ -22,9 +22,7 @@
   <body>
     <div class="wrapper">
       <header>
-        {% if site.github.is_user_page %}
-          <img id="avatar" src="{{ 'img/avatar.png' }}"/>
-        {% endif %}
+        <img id="avatar" src="{{ site.avatar }}"/>
 
         {% if site.github.is_project_page %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>

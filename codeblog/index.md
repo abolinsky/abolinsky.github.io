@@ -1,6 +1,7 @@
 ---
 layout: default
 title: code blog
+avatar: img/avatar-code.png
 category: codeblog
 ---
 

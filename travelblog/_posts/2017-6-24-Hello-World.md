@@ -1,1 +1,5 @@
+---
+type: post
+---
+
 # Travel

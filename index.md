@@ -1,8 +1,3 @@
----
-title: abolinsky
-description: My home base
----
-
 # Alexander Bolinsky
 
 I am a software developer at **LockerDome** in St. Louis, MO. While there, I have worked on everything from hand-coding architecture-specific x86 assembly and implementing a custom memory manager to asynchronous socket programming and data (de)serialization to unit testing to static type checking for a front-end javascript framework compiler to implementing a lexer/parser to api and application development to HTML DOM manipulation to basic UI/UX.
@@ -11,7 +6,7 @@ In my spare time I also work with embedded devices, microcontrollers, and to a l
 
 In my spare, spare time, I love to camp, hike, travel, play the guitar and guzheng, and eat sushi.
 
-___
+---
 ## My sharpest tools
 **Languages**: C++, JavaScript, x86 assembly, shell scripts, VHDL and Verilog, HTML and CSS. Learning Haskell.  
 **Performance analysis**: Valgrind and gprof.  

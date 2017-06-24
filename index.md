@@ -1,7 +1,13 @@
 # Alexander Bolinsky
 
-I am a software developer at *LockerDome* in St. Louis, MO. While there, I have worked with the full stack, splitting my time between low-level bit twiddling, memory management, and instruction optimization on their custom database, their api and back-end framework, and some UI/UX.
+I am a software developer at **LockerDome** in St. Louis, MO. While there, I have worked on everything from hand-coding architecture-specific x86 assembly and implementing a custom memory manager to asynchronous socket programming and data (de)serialization to unit testing to static type checking for a front-end javascript framework compiler to implementing components of an api working with the framework to implementing a lexer/parser to HTML DOM manipulation to basic UI/UX.
 
-My interests include embedded systems and hardware design, software architecture, robotic sensing, and the intersection between technology, health, and medicine.
+In my spare time I also work with embedded devices, microcontrollers, and to a lesser extent FPGAs. As you can probably tell, I like dirtying my hands with the lower levels of software. I am deeply interested in the intersection between technology, health, and medicine, and I am currently working on a project with a few others involving sleep disorders, using this project as an opportunity to practice developing good system architectures.
 
-I am most proficient with C++, x86 assembly, and javascript.
+In my spare, spare time, I love to camp, hike, and travel, play the guitar and guzheng, and eat sushi.
+
+### Toolset
+**Languages**: C++, JavaScript, x86 assembly, shell scripts, VHDL and Verilog, HTML and CSS. Learning Haskell.
+**Performance analysis**: Valgrind and gprof.
+**Version control**: Git.
+**Database, caching, and cloud**: PostgreSQL, Redis, AWS.

@@ -22,7 +22,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <img id="avatar" src="{{ '/img/' | append: page.avatar | default: '/img/avatar.png' }}"/>
+        <img id="avatar" src="{{ page.avatar | default: '/img/avatar.png' }}"/>
 
         {% if site.github.is_project_page %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>

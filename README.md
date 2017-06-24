@@ -1,2 +1,2 @@
 # abolinsky.github.io
-Personal web page @ abolinsky.io
+Personal web page @ [abolinsky.io](abolinsky.io)

@@ -7,11 +7,8 @@ In my spare time I also work with embedded devices, microcontrollers, and to a l
 In my spare, spare time, I love to camp, hike, travel, play the guitar and guzheng, and eat sushi.
 
 ___
-### My sharpest tools
+## My sharpest tools
 **Languages**: C++, JavaScript, x86 assembly, shell scripts, VHDL and Verilog, HTML and CSS. Learning Haskell.
-
 **Performance analysis**: Valgrind and gprof.
-
 **Version control**: Git.
-
 **Database, caching, and cloud**: PostgreSQL, Redis, AWS.

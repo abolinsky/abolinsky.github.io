@@ -23,14 +23,18 @@
     <div class="wrapper">
       <header>
         <img id="avatar" src="{{ page.avatar | default: '/img/avatar.png' }}"/>
+        <br/><br/>
 
         {% if site.github.is_project_page %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
-        {% else %}
-          <br/>
-          <h2><a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
+        {% elseif page.category == "home" %}
+          <h2><a href="{{ site.url }}"><strong>home</strong></a><a class="view" href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></h2></a>
+        {% elseif page.category == "codeblog" %}
+          <h2><a class="view" href="{{ site.url }}"><strong>home</strong></a><a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></h2></a>
+        {% elseif page.type == "post" %}
+          <h2><a class="view" href="{{ site.url }}"><strong>home</strong></a><a class="view" href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></h2></a>
         {% endif %}
 
         {% if site.show_downloads %}

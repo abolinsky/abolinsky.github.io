@@ -29,7 +29,8 @@
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
         {% else %}
-          <a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a>
+          <br/>
+          <h2><a href="{{ site.url }}{{ '/codeblog/' }}"><strong>code blog</strong></a></h2>
         {% endif %}
 
         {% if site.show_downloads %}

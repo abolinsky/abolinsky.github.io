@@ -3,6 +3,7 @@ layout: default
 title: code blog
 avatar: /img/avatar-code.png
 category: codeblog
+date: 2017-06-24
 ---
 
 <div class="posts">

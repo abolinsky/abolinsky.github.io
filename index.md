@@ -4,10 +4,14 @@ I am a software developer at **LockerDome** in St. Louis, MO. While there, I hav
 
 In my spare time I also work with embedded devices, microcontrollers, and to a lesser extent FPGAs. As you can probably tell, I like dirtying my hands with the lower levels of software. I am deeply interested in the intersection between technology, health, and medicine, and I am currently working on a project with a few others involving sleep disorders, using this project as an opportunity to practice developing good system architectures.
 
-In my spare, spare time, I love to camp, hike, and travel, play the guitar and guzheng, and eat sushi.
+In my spare, spare time, I love to camp, hike, travel, play the guitar and guzheng, and eat sushi.
 
-### Toolset
+___
+### My sharpest tools
 **Languages**: C++, JavaScript, x86 assembly, shell scripts, VHDL and Verilog, HTML and CSS. Learning Haskell.
+
 **Performance analysis**: Valgrind and gprof.
+
 **Version control**: Git.
+
 **Database, caching, and cloud**: PostgreSQL, Redis, AWS.

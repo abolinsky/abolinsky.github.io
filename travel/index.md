@@ -9,7 +9,6 @@ category: travelblog
   
   {% for post in site.posts %}
     {% if post.categories contains 'travelblog' %}
-      {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
       <article class="post">
 
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -20,6 +19,8 @@ category: travelblog
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       </article>
+    {% else %}
+      {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
     {% endif %}
   {% endfor %}
 

@@ -26,7 +26,7 @@ category: travelblog
   {% endfor %}
 
   {% if post_count == 0 %}
-    <p>Beginning July 16, 2017 I will be traveling solo for 48 days in Hong Kong, Japan, and Thailand. I will try to document my experiences in this blog as they unfold, so stay tuned!<p>
+    <p>Beginning July 16, 2017 I will be traveling solo for 48 days in Hong Kong, Japan, and Thailand. I will try to document my experiences in this blog as they unfold, so stay tuned!</p>
   {% endif %}
 
 </div>

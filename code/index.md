@@ -7,6 +7,10 @@ date: 2017-06-24
 ---
 
 <div class="posts">
+  {% site.posts == null %}
+    <p>Welcome to my empty code blog! This is the place where I'll be sharing all things software and hardware dev-related in addition to linking notable technical articles and inspirations I've recently digested. Stay tuned for my first post.<p>
+  {% endif %}
+
   {% for post in site.posts %}
     {% if post.categories contains 'codeblog' %}
       <article class="post">

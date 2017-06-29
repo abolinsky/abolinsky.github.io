@@ -1,6 +1,7 @@
---
+---
 layout: default
 title: travel blog
+avatar: /img/avatar-travel.png
 category: travelblog
 ---
 

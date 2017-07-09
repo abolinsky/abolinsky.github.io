@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: travel blog
 avatar: /img/avatar-travel.png
 category: travelblog

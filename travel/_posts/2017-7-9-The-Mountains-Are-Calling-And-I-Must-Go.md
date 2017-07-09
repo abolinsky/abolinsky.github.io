@@ -46,9 +46,9 @@ The following are the hiragana base characters, functional marks and diacritics:
   |**r** |ら|り|る|れ|ろ||
   |**w** |わ|  |  |  |を||
 
-  |Functional marks and diacritics|
-  |----|
-  |っ ゝ  ゛゜|
+  |Functional marks|Diacritics|
+  |--|--|
+  |っ ゝ| ゛゜|
 
 And some basic words and phrases:
 

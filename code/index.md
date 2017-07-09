@@ -3,7 +3,6 @@ layout: default
 title: code blog
 avatar: /img/avatar-code.png
 category: codeblog
-date: 2017-06-24
 ---
 
 <div class="posts">
@@ -15,10 +14,10 @@ date: 2017-06-24
       {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
       <article class="post">
 
-        <h5>{{ page.date | date: "%-d %B %Y" }}</h5>
-
+        <h3>{{ post.date | date: '%B %d, %Y' }}</h3>
+        <h1>{{ post.title }}</h1>
         <div class="entry">
-          {{ post.excerpt }}
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
         </div>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

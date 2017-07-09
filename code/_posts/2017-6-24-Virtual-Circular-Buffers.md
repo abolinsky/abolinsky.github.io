@@ -1,7 +1,6 @@
 ---
 type: post
 avatar: /img/virtual-circular-buffer.png
-date: 
 title: Virtual Circular Buffers
 ---
 

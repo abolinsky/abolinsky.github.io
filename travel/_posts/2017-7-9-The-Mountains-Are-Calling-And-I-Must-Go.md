@@ -46,12 +46,11 @@ The following are the hiragana base characters, functional marks and diacritics:
   |r |ら|り|る|れ|ろ|
   |w |わ|  |  |  |を|
   |--|-----------|--|
-  |  |ん (n)     ||
-  |-----------------|
-  |Functional marks
-  and diacritics |
-  |-----------------|
-  |っ|ゝ| |゛| ゜|
+  |  |ん (n)|||||
+
+  |Functional marks and diacritics ||||||
+  |-|--|--|-|--|---|
+  | |っ|ゝ| |゛| ゜|
 
 And some basic words and phrases:
 

@@ -1,5 +1,6 @@
 ---
 type: post
+layout: post
 date: July 9, 2017
 category: travelblog
 title: The Mountains Are Calling And I Must Go

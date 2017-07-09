@@ -17,11 +17,11 @@ I also wanted to spend at least a week and a half in any one place to avoid feel
 
 So here's my itinerary:
 
-Shanghai: July 18 - July 19  
-Hong Kong: July 19 - July 27  
-Japan: July 27 - August 20  
-Thailand: August 20 - August 31  
-Shanghai: August 31 - September 1
+**Shanghai**: July 18 - July 19  
+**Hong Kong**: July 19 - July 27  
+**Japan**: July 27 - August 20  
+**Thailand**: August 20 - August 31  
+**Shanghai**: August 31 - September 1
 
 ## My Rule With Languages
 Since I started traveling out of the country, I have set a rule for myself. For any country that I will be spending two or more weeks in, I must learn enough of the language to get around on my own without English. Now I know translation tools such as google translate have gotten incredibly advanced and can translate speech and text in real time, and I absolutely appreciate their usefulness in certain situations. But if I want to immerse myself in a culture and interact more intimately with people, it makes sense to me to develop as direct a connection as possible. Reducing my dependency on a real-time translation app will also help to conserve power on my phone and make it much easier to get around if my phone dies, and not needing to use a language reference every time I look at any foreign language text will save time and mental context switching and allow me to more fully enjoy the moment.
@@ -33,31 +33,29 @@ It is already an interesting and difficult language to pick up, but it is also i
 
 The following are the hiragana base characters, functional marks and diacritics:
 
-  |  |a |i |u |e |o|
-  |--|--|--|--|--|--|
-  |∅ |あ|い|う|え|お|
-  |k |か|き|く|け|こ|
-  |s |さ|し|す|せ|そ|
-  |t |た|ち|つ|て|と|
-  |n |な|に|ぬ|ね|の|
-  |h |は|ひ|ふ|へ|ほ|
-  |m |ま|み|む|め|も|
-  |y |や|  |ゆ|  |よ|
-  |r |ら|り|る|れ|ろ|
-  |w |わ|  |  |  |を|
-  |--|-----------|--|
-  |  |ん (n)|||||
+  |  |a |i |u |e |o| |
+  |--|--|--|--|--|--|--|
+  |**∅** |あ|い|う|え|お||
+  |**k** |か|き|く|け|こ||
+  |**s** |さ|し|す|せ|そ||
+  |**t** |た|ち|つ|て|と||
+  |**n** |な|に|ぬ|ね|の|ん (n)|
+  |**h** |は|ひ|ふ|へ|ほ||
+  |**m** |ま|み|む|め|も||
+  |**y** |や|  |ゆ|  |よ||
+  |**r** |ら|り|る|れ|ろ||
+  |**w** |わ|  |  |  |を||
 
-  |Functional marks and diacritics ||||||
-  |-|--|--|-|--|---|
-  | |っ|ゝ| |゛| ゜|
+  |Functional marks and diacritics|
+  |----|
+  |っ ゝ  ゛゜|
 
 And some basic words and phrases:
 
-one: いち (pronounced ichi)  
-two: に (pronounced ni)  
-yes: はい (pronounced hai)
+**one**: いち (pronounced ichi)  
+**two**: に (pronounced ni)  
+**yes**: はい (pronounced hai)
 
-good morning: おはよう (pronounced ohayō)  
-goodbye: さようなら (pronounced sayōnara)  
-nice to meet you: はじめまして (pronounced hajimemashite)
+**good morning**: おはよう (pronounced ohayō)  
+**goodbye**: さようなら (pronounced sayōnara)  
+**nice to meet you**: はじめまして (pronounced hajimemashite)

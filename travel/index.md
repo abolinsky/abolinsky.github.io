@@ -15,8 +15,9 @@ category: travelblog
       <article class="post">
 
         <h3>{{ post.date | date: '%B %d, %Y' }}</h3>
+        <h1>{{ post.title }}</h1>
         <div class="entry">
-          {{ post.excerpt | markdownify | strip_html | truncatewords: 50 }}
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
         </div>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

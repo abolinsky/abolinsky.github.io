@@ -2,9 +2,9 @@
 type: post
 date: July 9, 2017
 category: travelblog
+title: The Mountains Are Calling And I Must Go
 ---
 
-# The Mountains Are Calling And I Must Go
 It's not often that anyone is given an opportunity for a voluntary and extended change of pace in their life. And I imagine it is even less often that anyone can create that opportunity for themself without assuming too much risk or burning bridges in the process. But I am fortunate enough at this point in my life to have almost nothing tying me down, and I have my brother to thank for teaching me the art of frugality (in moderation) and how to travel cheaply. Combine this with over a year of intense growth as a software developer to the point of near-burn out, whisk on high speed until fluffy, and bake in the oven for 10 to 12 minutes at 400°F or until the desire for adventure and change overwhelm the senses.
 
 During this critical time in the oven, one of my best friends told me that he will be doing an internship in Beijing this summer, and that at some point he will have the opportunity to take a short break in Hong Kong to do some exploring. Then he jokingly told me I should take a vacation and join him. I just kind of sat there, the oven timer dinging deafeningly loud in my ears. Then I completely seriously told him I'll be there. We made flight arrangements that next week.

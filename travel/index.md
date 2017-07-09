@@ -14,8 +14,8 @@ category: travelblog
       {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
       <article class="post">
 
-        <h3>{{ post.date | date: '%B %d, %Y' }}</h3>
         <h1>{{ post.title }}</h1>
+        <h3>{{ post.date | date: '%B %d, %Y' }}</h3>
         <div class="entry">
           {{ post.excerpt | strip_html | truncatewords: 50 }}
         </div>

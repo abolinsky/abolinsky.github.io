@@ -54,10 +54,10 @@ The following are the hiragana base characters, functional marks and diacritics:
 
 And some basic words and phrases:
 
-one: いち (pronounced ichi) 
-two: に (pronounced ni)
+one: いち (pronounced ichi)  
+two: に (pronounced ni)  
 yes: はい (pronounced hai)
 
-good morning: おはよう (pronounced ohayō)
-goodbye: さようなら (pronounced sayōnara)
+good morning: おはよう (pronounced ohayō)  
+goodbye: さようなら (pronounced sayōnara)  
 nice to meet you: はじめまして (pronounced hajimemashite)

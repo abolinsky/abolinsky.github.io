@@ -1,5 +1,6 @@
 ---
 type: post
+date: July 9, 2017
 category: travelblog
 ---
 

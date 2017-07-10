@@ -55,10 +55,10 @@ The following are the hiragana base characters, functional marks and diacritics:
 
 And some basic words and phrases:
 
-**one**: いち (pronounced ichi)  
+**one**: いち (pronounced i-chi)  
 **two**: に (pronounced ni)  
 **yes**: はい (pronounced hai)
 
-**good morning**: おはよう (pronounced ohayō)  
-**goodbye**: さようなら (pronounced sayōnara)  
-**nice to meet you**: はじめまして (pronounced hajimemashite)
+**good morning**: おはよう (pronounced o-ha-yō)  
+**goodbye**: さようなら (pronounced sa-yō-nara)  
+**nice to meet you**: はじめまして (pronounced ha-ji-me-ma-shi-te)

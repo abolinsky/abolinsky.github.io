@@ -22,8 +22,8 @@ So here's my itinerary:
 
 **Shanghai**: July 18 - July 19  
 **Hong Kong**: July 19 - July 27  
-**Japan**: July 27 - August 20  
-**Thailand**: August 20 - August 31  
+**Japan (Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, etc.)**: July 27 - August 20  
+**Thailand (Phuket, Krabi Ao Nang)**: August 20 - August 31  
 **Shanghai**: August 31 - September 1
 
 ## My Rule With Languages

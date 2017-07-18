@@ -21,7 +21,7 @@ category: travelblog
         </div>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        <br/>
+        <br><br>
       </article>
     {% endif %}
   {% endfor %}

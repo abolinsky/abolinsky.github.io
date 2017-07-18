@@ -2,6 +2,10 @@
   border-radius: 50%;
 }
 
+.post-img {
+  padding: 20px 0px;
+}
+
 .right-page {
   margin-left: 20px;
 }

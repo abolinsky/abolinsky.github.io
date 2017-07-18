@@ -19,9 +19,9 @@ category: travelblog
         <div class="entry">
           {{ post.excerpt | strip_html | truncatewords: 50 }}
         </div>
-        <br/>
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <br/>
       </article>
     {% endif %}
   {% endfor %}

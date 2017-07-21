@@ -22,3 +22,13 @@
 .selected {
   color: #222;
 }
+
+@media print, screen and (min-width: 720px) {
+  .post-header {
+    width: 170px;
+  }
+
+  .post-section {
+    width: 650px;
+  }
+}

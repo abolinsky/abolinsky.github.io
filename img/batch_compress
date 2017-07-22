@@ -1,0 +1,25 @@
+for file in ./*
+do
+  cwebp -q 80 -m 6 "$file" -o "${file%???}webp"
+done
+
+rm *.jpg
+
+dir=$(basename $PWD)
+
+for file in ./*.webp
+do
+  echo "<img class='post-img' src='{{ \"/img/travel/SE_Asia/$dir/${file:2}\" }}'/>" >> post_tags.txt
+done
+
+cp -r ../$dir/ ~/abolinsky.github.io/img/travel/SE_Asia/.
+
+echo -n "Post date (YYYY-MM-DD):"
+read post_date
+echo -n "Post title (Example-Title-With-Paren\'s):"
+read post_title
+
+cp ~/abolinsky.github.io/travel/2017-7-23-Template.md ~/abolinsky.github.io/travel/_posts/$post_date-$post_title.md
+cat post_tags.txt >> ~/abolinsky.github.io/travel/_posts/$post_date-$post_title.md
+
+vi ~/abolinsky.github.io/travel/_posts/$post_date-$post_title.md

@@ -1,7 +1,7 @@
 ---
 type: post
 layout: post
-date: July 23, 2017
+date: July 22, 2017
 category: travelblog
 title: Victoria Peak
 avatar: /img/avatar-travel.png

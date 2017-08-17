@@ -51,7 +51,6 @@ With that said, here is the rest of my experience in Hong Kong told through phot
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day8/IMG_20170725_193707~2.webp" }}'/>
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day8/IMG_20170725_194616.webp" }}'/>
 
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day9/IMG_20170726_094448~2.webp" }}'/>
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day9/IMG_20170726_095227.webp" }}'/>
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day9/IMG_20170726_120806.webp" }}'/>
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day9/IMG_20170726_121018.webp" }}'/>

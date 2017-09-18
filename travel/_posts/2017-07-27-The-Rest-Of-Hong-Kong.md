@@ -9,7 +9,7 @@ avatar: /img/avatar-travel.png
 
 It turned out, perhaps not surprisingly, that daily posts were just not going to happen. Once I met up with my friends in Hong Kong and began to put more time into Japanese, any remaining free time I wanted for writing up posts needed to be cut from my sleep, which I couldn't do. But perhaps more importantly, there have been so many amazing people and incredible places that I've had the pleasure of meeting and exploring, and I realized that time spent on the blog was not as personally productive as spending time forming relationships with those people or immersing myself entirely in the places and the food I was discovering. So I will largely be doing photo dumps and wait for my flight from Japan to Thailand to do a writeup of Japan.
 
-With that said, here is the rest of my experience in Hong Kong told through photos. I will be adding some stories to this post later on. Until then, enjoy. Hong Kong is strikingly beautiful.
+With that said, here is the rest of my experience in Hong Kong told through photos. Hong Kong is strikingly beautiful.
 
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day7/IMG_20170724_090902.webp" }}'/>
 <img class='post-img' src='{{ "/img/travel/SE_Asia/Day7/IMG_20170724_101657~2.webp" }}'/>

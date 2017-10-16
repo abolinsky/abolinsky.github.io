@@ -11,27 +11,46 @@ Since I began to teach myself Japanese, I have experimented with several workflo
 
 The goal I have set for myself is pretty straightforward, but definitely challenging. I want to be well on my way to fluency in three months, with a slight preference for reading ability. What does this mean objectively? Well, I think of learning a language as developing on four fronts: reading, writing, listening/comprehension, and speaking. So I'll try and list my objective goals for each.
 
+
 Reading:
+
 1) Learning the meanings all 2136 常用漢字 (standard-use kanji), which is normally accomplished by the end of secondary school in Japan.
+
 2) ~80% literacy when reading Japanese manga aimed at younger audiences.
+
 3) ~65% literacy when reading the newspaper in Japanese.
 
+
 Writing:
+
 1) Learning how to correctly write - with proper stroke order - all 2136 standard-use kanji.
+
 2) Be able to quickly use the 12-key keyboard layout for typing Japanese on my phone.
+
 3) No hesitation writing katakana.
 
+
 Listening/comprehension:
+
 1) Little to no trouble distinguishing word boundaries during speech.
+
 2) Understanding what is being said about everyday topics, in a work environment, requests, and most common phrases.
+
 3) Understanding a fair amount of Japanese on a live action show aimed at young adults.
 
+
 Speaking:
+
 1) Confidence while speaking.
+
 2) Working ability to describe things that I don't know the words for in order to get my point across.
+
 3) Correct pronunciation and timing.
+
 4) No longer translate English sentence structure and ordering to Japanese before speaking.
+
 5) Ability to read aloud a Japanese text without any loss in speed.
+
 
 Again, these are rough guidelines for myself. My more simple, overarching goal is to learn as much as possible as efficiently as possible. 
 

@@ -11,8 +11,7 @@ Since I began to teach myself Japanese, I have experimented with several workflo
 
 The goal I have set for myself is pretty straightforward, but definitely challenging. I want to be well on my way to fluency in three months, with a slight preference for reading ability. What does this mean objectively? Well, I think of learning a language as developing on four fronts: reading, writing, listening/comprehension, and speaking. So I'll try and list my objective goals for each.
 
-
-Reading:
+###Reading:
 
 1) Learning the meanings all 2136 常用漢字 (standard-use kanji), which is normally accomplished by the end of secondary school in Japan.
 
@@ -21,7 +20,7 @@ Reading:
 3) ~65% literacy when reading the newspaper in Japanese.
 
 
-Writing:
+###Writing:
 
 1) Learning how to correctly write - with proper stroke order - all 2136 standard-use kanji.
 
@@ -30,7 +29,7 @@ Writing:
 3) No hesitation writing katakana.
 
 
-Listening/comprehension:
+###Listening/comprehension:
 
 1) Little to no trouble distinguishing word boundaries during speech.
 
@@ -39,7 +38,7 @@ Listening/comprehension:
 3) Understanding a fair amount of Japanese on a live action show aimed at young adults.
 
 
-Speaking:
+###Speaking:
 
 1) Confidence while speaking.
 
@@ -72,15 +71,15 @@ The above are all things that I am doing, and it seems to be working quite well 
 
 During this whole process, I have also stumbled upon things that I found to be counterproductive for my studies, and I think it's important to talk about those too. Things that did not work for me:
 
-1) Pay ANY attention at all to language advice from people I don't know or don't have good reason to respect. 
+###1) Pay ANY attention at all to language advice from people I don't know or don't have good reason to respect. 
 
 This means, don't google anything about how long it should take to learn X, Y, and Z. Don't google how many kanji you should learn every day. Don't google how difficult it is to complete something. Why? Because none of that matters! If your goal is to learn a language, that's your own personal goal. If you really want to learn something, you will do it on your time and your terms and make it work in the way that's best for you. If you're wondering how many kanji you can effectively stick into your schedule per day without them falling right out of your memory, pick a number, experiment for a couple days, and revise that number if it's too few or too many. Similarly, don't waste time reading through forums of answers on how to unpack the grammar for a sentence one user was confused about. Language is complex, but at the earlier stages of learning a language, reading through a forum of debate about how a sentence should be written will only plant seeds of doubt in your mind and make you that much less confident when forming your own sentences. A lack of confidence is really something that can impede learning a language; so maintain your confidence, work through your books, and learn about your mistakes and the correct usages organically through discovery while reading or watching something, or through a friend fluent in the language who can help you out.
 
-2) Spend time worrying about which resource is best to use, or downloading every app and checking out every book in the library.
+###2) Spend time worrying about which resource is best to use, or downloading every app and checking out every book in the library.
 
 Do your due diligence, and then commit. Decision fatigue is real, and there are probably more books on beginner Japanese than you could read if you only read those books for the rest of your life. Do a reasonable amount of up-front research about which books to get to cover the ground you'll be exploring for the foreseeable future, get only those books, and commit to them. If a book is not working or not offering you what you need, swap it out for another. It's hard to imagine having enough time to work through more than a single grammar/vocabulary book at once, especially if you want to leave time to practice the other fronts of the language. So pick one, and start working through it.
 
-3) Give yourself cheat days
+###3) Give yourself cheat days
 
 YMMV with this, but I have personally found that one of the most important aspects of learning a language is developing a habit. When you give yourself days off, you are not only breaking the immersion that is so formative for getting things to become familiar and stick to long-term memory, you are also making it much harder for a habit to form. One cheat day turns into two, and so on. If you find it particularly painful to study on one day, think about how you can still put in the time, but make the learning more passive rather than active. This might mean only doing half of the workbook chapter, or skipping the chapter altogether and substituting that time with a podcast or a Japanese show on netflix. At least that way you are still getting exposure to the language, and your brain will still pick up things even if you don't want it to.
 

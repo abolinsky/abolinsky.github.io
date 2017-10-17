@@ -13,7 +13,7 @@ The goal I have set for myself is pretty straightforward, but definitely challen
 
 ### Reading:
 
-1) Learning the meanings all 2136 常用漢字 (standard-use kanji), which is normally accomplished by the end of secondary school in Japan.
+1) Learning the meanings of all 2136 常用漢字 (standard-use kanji), which is normally accomplished by the end of secondary school in Japan.
 
 2) ~80% literacy when reading Japanese manga aimed at younger audiences.
 

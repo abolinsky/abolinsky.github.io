@@ -1,8 +1,8 @@
 ---
 layout: default
-title: travel blog
+title: blog
 avatar: /img/avatar-travel.png
-category: travelblog
+category: allblog
 ---
 
 <div class="posts">
@@ -10,7 +10,7 @@ category: travelblog
   {% assign post_count=0 %}
 
   {% for post in site.posts %}
-    {% if post.categories contains 'travelblog' %}
+    {% if post.categories contains 'allblog' %}
       {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
       <article class="post">
 

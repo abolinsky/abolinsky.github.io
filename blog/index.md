@@ -14,8 +14,8 @@ category: allblog
       {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
       <article class="post">
 
-        <h1>{{ post.title }}</h1>
-        <h3>{{ post.date | date: '%B %d, %Y' }}</h3>
+        <h3 class="no-bottom-margin">{{ post.date | date: '%B %d, %Y' }}</h3>
+        <h1 class="no-bottom-margin">{{ post.title }}</h1>
         <div class="entry">
           {{ post.excerpt | strip_html | truncatewords: 50 }}
         </div>

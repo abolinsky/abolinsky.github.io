@@ -23,6 +23,10 @@
   color: #222;
 }
 
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
 @media print, screen and (min-width: 720px) {
   .post-header {
     width: 170px;

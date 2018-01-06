@@ -22,13 +22,23 @@
   <body>
     <div class="wrapper">
       <header class="post-header">
-      {% if page.category == "allblog" %}
-      <a href="{{ site.url }}{{ '/blog/' }}">
-      {% elsif page.category == "codeblog" %}
-      <a href="{{ site.url }}{{ '/code/' }}">
-      {% endif %}
+        {% if page.category == "allblog" %}
+        <a href="{{ site.url }}{{ '/blog/' }}">
+        {% elsif page.category == "codeblog" %}
+        <a href="{{ site.url }}{{ '/code/' }}">
+        {% endif %}
         <img id="avatar" src="{{ page.avatar | default: '/img/avatar.png' }}"/>
-      </a>
+        </a>
+
+        <div class="PageNavigation">
+          {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          </br>
+          {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+        </div>
       </header>
       <section class="post-section">
 
@@ -38,14 +48,6 @@
 
       <img id="stamp" style="max-width:5%" src="/img/Alexander-Seal.svg"/>
       </section>
-      <div class="PageNavigation">
-        {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-        {% endif %}
-        {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-        {% endif %}
-      </div>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 

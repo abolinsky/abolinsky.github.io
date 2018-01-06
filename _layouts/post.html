@@ -22,7 +22,13 @@
   <body>
     <div class="wrapper">
       <header class="post-header">
+      {% if page.category == "allblog" %}
+      <a href="{{ site.url }}{{ '/blog/' }}">
+      {% elsif page.category == "codeblog" %}
+      <a href="{{ site.url }}{{ '/code/' }}">
+      {% endif %}
         <img id="avatar" src="{{ page.avatar | default: '/img/avatar.png' }}"/>
+      </a>
       </header>
       <section class="post-section">
 

@@ -1,9 +1,0 @@
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_072218.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_074221.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_120036.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_120105.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_191329.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_201115.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_203522.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_203946~2.webp" }}'/>
-<img class='post-img' src='{{ "/img/travel/SE_Asia/Day4/IMG_20170721_204718~2.webp" }}'/>

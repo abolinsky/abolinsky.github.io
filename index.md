@@ -4,6 +4,6 @@ category: home
 
 # Alexander Bolinsky
 
-I am a software engineer living in Tokyo and working to empower lives with connected machines at [**Rapyuta Robotics**](www.rapyuta-robotics.com).
+I am a software engineer living in Tokyo and working to empower lives with connected machines at [**Rapyuta Robotics**](https://www.rapyuta-robotics.com).
 
-In my spare time I am learning Japanese, exploring Japan, fiddling with embedded devices, microcontrollers, and FPGAs, playing Go, eating sushi, and reading in parks.
+In my spare time I am learning Japanese, playing Go, eating tsukemen ramen, and dancing like a fool.

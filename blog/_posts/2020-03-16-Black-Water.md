@@ -2,7 +2,7 @@
 type: post
 layout: post
 date: March 16, 2020
-category: travelblog
+category: allblog
 title: 黒湯
 avatar: /img/avatar-travel.png
 ---

@@ -3,7 +3,7 @@ type: post
 layout: post
 date: March 20, 2020
 category: allblog
-title: 
+title: 春先
 avatar: /img/avatar-travel.png
 ---
 今日はついに春が来た！3月2日以来在宅勤務なので、気分転換に出かけることにした。空は真っ青だし、桜が咲き始めたばかり！風はより暖かくて、なんて気持ち良いんだ！

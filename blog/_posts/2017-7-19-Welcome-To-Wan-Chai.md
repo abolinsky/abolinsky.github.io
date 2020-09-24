@@ -4,7 +4,6 @@ layout: post
 date: July 19, 2017
 category: allblog
 title: Welcome To Wan Chai
-avatar: /img/avatar-travel.png
 ---
 
 Today was my trip out of mainland China and into my ten-day stay in Hong Kong. The signs in the immigration area in the Hong Kong International Airport read "Travelers" instead of Shanghai's "Foreigners", which was an interesting change of perspective and set the tone for how I was going to be greeted by Hong Kong. From the moment I stepped off the plane, I  stepped into a kind of paradise. <img class="post-img" src="{{ '/img/travel/SE_Asia/Day2/pudong_airport.jpeg' }}"/> <img class="post-img" src="{{ '/img/travel/SE_Asia/Day2/flight_to_hong_kong.jpeg' }}"/> <img class="post-img" src="{{ '/img/travel/SE_Asia/Day2/after_flight_to_hong_kong.jpeg' }}"/>

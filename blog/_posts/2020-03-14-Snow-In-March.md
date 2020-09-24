@@ -4,7 +4,6 @@ layout: post
 date: March 14, 2020
 category: allblog
 title: ３月の雪
-avatar: /img/avatar-travel.png
 ---
 先週は予想より大変だったので、金曜日が終わったらフラフラするほど疲れていた。目が半分しかあいていない状態で映画を観始めた。知らない間に眠ってしまった。
 

@@ -4,7 +4,6 @@ layout: post
 date: July 23, 2017
 category: allblog
 title: Falun Dafa Protest And Southern Kowloon Rain
-avatar: /img/avatar-travel.png
 ---
 
 This morning I got breakfast with Nicolas - an American visiting Hong Kong short-term - and Martin - a German teaching English in Hong Kong. <img class='post-img' src='{{ "/img/travel/SE_Asia/Day6/IMG_20170723_093738.jpeg" }}'/><img class='post-img' src='{{ "/img/travel/SE_Asia/Day6/IMG_20170723_101123.jpeg" }}'/> Then I took a series of naps until waking up to the sound of brass instruments and drumming moving through the street below. From the bedroom window, it looked like a parade, so Lise and I were curious and checked it out. It was more apparent on the ground that this was actually a particularly well-organized peaceful protest. Hong Kong locals were marching through the streets in support of Falun Dafa, a Chinese spiritual practice centered around the principles of truthfulness, compassion, and forbearance and which encourages meditation and qigong exercises to improve health and reach spiritual enlightenment.

@@ -4,7 +4,6 @@ layout: post
 date: October 16, 2017
 category: allblog
 title: Learning Japanese
-avatar: /img/avatar-travel.png
 ---
 
 Since I began to teach myself Japanese, I have experimented with several workflows and resources in order to find a comfortable and efficient - if not optimal - self-teaching environment for myself. I have been fortunate to have a lot of time on my hands to dedicate to this endeavor, thanks in part to being between jobs and in part to having saved enough to float me for several months before dipping into my main chunk of savings. This gives me an opportunity to treat this time as if I were a full-time student and reap all the benefits of consistent exposure to a subject without paying any tuition.

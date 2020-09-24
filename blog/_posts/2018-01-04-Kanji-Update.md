@@ -4,7 +4,6 @@ layout: post
 date: January 4, 2018
 category: allblog
 title: Kanji Update
-avatar: /img/avatar-travel.png
 ---
 
 I feel completely comfortable saying that my daily routine of learning Kanji is entirely a habit now. If I miss a day, something feels really off - and I then have reviews piling up, which makes more work for the day or two afterwards.

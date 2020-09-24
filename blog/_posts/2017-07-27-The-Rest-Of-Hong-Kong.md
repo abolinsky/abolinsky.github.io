@@ -4,7 +4,6 @@ layout: post
 date: July 27, 2017
 category: allblog
 title: The Rest Of Hong Kong
-avatar: /img/avatar-travel.png
 ---
 
 It turned out, perhaps not surprisingly, that daily posts were just not going to happen. Once I met up with my friends in Hong Kong and began to put more time into Japanese, any remaining free time I wanted for writing up posts needed to be cut from my sleep, which I couldn't do. But perhaps more importantly, there have been so many amazing people and incredible places that I've had the pleasure of meeting and exploring, and I realized that time spent on the blog was not as personally productive as spending time forming relationships with those people or immersing myself entirely in the places and the food I was discovering. So I will largely be doing photo dumps and wait for my flight from Japan to Thailand to do a writeup of Japan.

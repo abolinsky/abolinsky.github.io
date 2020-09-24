@@ -4,7 +4,6 @@ layout: post
 date: March 16, 2020
 category: allblog
 title: 黒湯
-avatar: /img/avatar-travel.png
 ---
 ドアが開き、賑やかなホームに降りた。後ろの満員電車から、人がざあざあと川の流れのように早く向こう側の各駅停車へ歩き出した。人の間を縫い、ついに改札に着いた。出口が見えると寒いビル風と戦うのに準備をしておいた。
 

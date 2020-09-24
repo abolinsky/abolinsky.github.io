@@ -4,7 +4,6 @@ layout: post
 date: July 9, 2017
 category: allblog
 title: The Mountains Are Calling And I Must Go
-avatar: /img/avatar-travel.png
 ---
 
 It's not often that anyone is given an opportunity for a voluntary and extended change of pace in their life. And I imagine it is even less often that anyone can create that opportunity for themself without assuming too much risk or burning bridges in the process. But I am fortunate enough at this point in my life to have almost nothing tying me down, and I have my brother to thank for teaching me the art of frugality (in moderation) and how to travel cheaply. Combine this with over a year of intense growth as a software developer to the point of near-burn out, whisk on high speed until fluffy, and bake in the oven for 10 to 12 minutes at 400°F or until the desire for adventure and change overwhelm the senses.

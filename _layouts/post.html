@@ -24,10 +24,11 @@
       <header class="post-header">
         {% if page.category == "allblog" %}
         <a href="{{ site.url }}{{ '/blog/' }}">
+        <img id="avatar" src="{{ '/img/avatar-travel.png' }}"/>
         {% elsif page.category == "codeblog" %}
         <a href="{{ site.url }}{{ '/code/' }}">
+        <img id="avatar" src="{{ '/img/avatar-code.png' }}"/>
         {% endif %}
-        <img id="avatar" src="{{ page.avatar | default: '/img/avatar.png' }}"/>
         </a>
       </header>
       <section class="post-section">
@@ -47,7 +48,7 @@
       <h1>{{ page.title }}</h1>
       {{ content }}
 
-      <img id="stamp" style="max-width:5%" src="/img/Alexander-Seal.svg"/>
+      <img id="stamp" style="max-width:48px" src="/img/alexander-seal.jpg"/>
       </section>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>

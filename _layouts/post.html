@@ -25,7 +25,7 @@
         {% if page.category == "allblog" %}
         <a href="{{ site.url }}{{ '/blog/' }}">
         <img id="avatar" src="{{ '/img/avatar-travel.png' }}"/>
-        {% elsif page.category == "codeblog" %}
+        {% elsif page.category == "codeblog" or page.category == "bookblog" %}
         <a href="{{ site.url }}{{ '/code/' }}">
         <img id="avatar" src="{{ '/img/avatar-code.png' }}"/>
         {% endif %}

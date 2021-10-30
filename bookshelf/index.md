@@ -1,6 +1,7 @@
 ---
 layout: default
 title: bookshelf
+category: bookblog
 avatar: /img/avatar-code.png
 ---
 

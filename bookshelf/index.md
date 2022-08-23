@@ -8,6 +8,15 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
+    <h2 class="no-bottom-margin">Start Small, Stay Small: A Developer's Guide to Launching a Startup</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2022 February</h3>
+    <h2 class="no-bottom-margin">Don't Sleep, There Are Snakes: Life and Language in the Amazonian Jungle</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2022 January</h3>
+    <h2 class="no-bottom-margin">System Design Interview - An Insider's Guide</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2021 December</h3>
     <h2 class="no-bottom-margin">Why We Sleep: Unlocking the Power of Sleep and Dreams</h2>
     <br><br>
     <h3 class="no-bottom-margin">2021 November</h3>

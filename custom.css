@@ -1,5 +1,7 @@
 #avatar {
   border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 .post-img {
@@ -36,9 +38,13 @@
 
 .PageNavigation a {
   display: block;
-  width: 50%;
+  width: 33.33%;
   float: left;
   margin: 1em 0;
+}
+
+.PageNavigation .center {
+  text-align: center;
 }
 
 .PageNavigation .next {
@@ -51,6 +57,16 @@
   }
 
   .post-section {
-    width: 650px;
+    /*width: 650px;*/
+  }
+}
+
+@media print, screen and (max-width: 960px)
+  header {
+    padding-right: unset;
+  }
+
+  #avatar {
+    display: hidden;
   }
 }

@@ -39,7 +39,7 @@
           &laquo; {{ page.previous.title | truncatewords: 3 }}
           {% endif %}
           </b></a>
-          <a class="center" href="{{'/'}}"><b>Home</b></a>
+          <a class="center" href="{{ '/blog/' }}"><b>Home</b></a>
           {% if page.next.url %}
           <a class="next" href="{{page.next.url}}"><b>{{ page.next.title | truncatewords: 3 }} &raquo;</b></a>
           {% endif %}

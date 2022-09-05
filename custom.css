@@ -67,6 +67,6 @@
   }
 
   #avatar {
-    display: none;
+    display: max-width: 30%;
   }
 }

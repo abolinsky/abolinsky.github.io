@@ -51,14 +51,12 @@
   text-align: right;
 }
 
-@media print, screen and (min-width: 720px) {
-  .post-header {
-    width: 170px;
-  }
+h3, h4, h5, h6 {
+  color: #808080;
+}
 
-  .post-section {
-    /*width: 650px;*/
-  }
+article {
+  margin-top: 1em;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -66,7 +64,29 @@
     padding-right: unset;
   }
 
+  iframe {
+    max-width: 100%;
+  }
+
+  .PageNavigation {
+    position: -webkit-sticky;
+    margin: 0 0 1.5em 0;
+    position: sticky;
+    margin-top: 1em;
+  }
+
+  .prev {
+    text-align: left;
+  }
+
+  section {
+    border-width: 1px 0 0 0;
+    text-align: center;
+    margin: auto;
+    max-width: 512px;
+  }
+
   #avatar {
-    display: max-width: 30%;
+    max-width: 256px;
   }
 }

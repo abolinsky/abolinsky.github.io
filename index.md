@@ -1,4 +1,5 @@
 ---
+layout: default
 category: home
 avatar: /img/avatar.jpg
 ---

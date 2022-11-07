@@ -8,8 +8,12 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
+    <h2 class="no-bottom-margin"><a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a></h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2022 June</h3>
     <h2 class="no-bottom-margin">Start Small, Stay Small: A Developer's Guide to Launching a Startup</h2>
-    <br>
+    <br><br>
+    <h3 class="no-bottom-margin">2022 March</h3>
     <h2 class="no-bottom-margin"><a href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript The Hard Way</a></h2>
     <br><br>
     <h3 class="no-bottom-margin">2022 February</h3>

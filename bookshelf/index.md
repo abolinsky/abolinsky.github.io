@@ -8,6 +8,12 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
+    <h2 class="no-bottom-margin">A Tour of C++, Third Edition</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2023 February</h3>
+    <h2 class="no-bottom-margin">How Linux Works: What Every Superuser Should Know</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2022 November</h3>
     <h2 class="no-bottom-margin"><a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a></h2>
     <br><br>
     <h3 class="no-bottom-margin">2022 June</h3>

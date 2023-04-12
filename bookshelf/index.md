@@ -7,46 +7,46 @@ avatar: /img/avatar-code.png
 
 <div class="posts">
   <article class="post">
-    <h3 class="no-bottom-margin">Reading Now</h3>
-    <h2 class="no-bottom-margin">The Clean Coder: A Code of Conduct for Professional Programmers</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2023 April</h3>
-    <h2 class="no-bottom-margin">Clean Code: A Handbook of Agile Software Craftsmanship</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2023 March</h3>
-    <h2 class="no-bottom-margin">A Tour of C++, Third Edition</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2023 February</h3>
-    <h2 class="no-bottom-margin">How Linux Works: What Every Superuser Should Know</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2022 November</h3>
-    <h2 class="no-bottom-margin"><a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a></h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2022 June</h3>
-    <h2 class="no-bottom-margin">Start Small, Stay Small: A Developer's Guide to Launching a Startup</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2022 March</h3>
-    <h2 class="no-bottom-margin"><a href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript The Hard Way</a></h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2022 February</h3>
-    <h2 class="no-bottom-margin">Don't Sleep, There Are Snakes: Life and Language in the Amazonian Jungle</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2022 January</h3>
-    <h2 class="no-bottom-margin">System Design Interview - An Insider's Guide</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2021 December</h3>
-    <h2 class="no-bottom-margin">Why We Sleep: Unlocking the Power of Sleep and Dreams</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2021 November</h3>
-    <h2 class="no-bottom-margin"><a href="https://arxiv.org/abs/2108.07258">On the Opportunities and Risks of Foundation Models</a></h2>
-    <br>
-    <h2 class="no-bottom-margin">Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking</h2>
-    <br><br>
-    <h3 class="no-bottom-margin">2021 October</h3>
-    <h2 class="no-bottom-margin">Code: The Hidden Language of Computer Hardware and Software</h2>
-    <br>
-    <h2 class="no-bottom-margin">A Brief History of Earth: Four Billion Years in Eight Chapters</h2>
-    <br>
-    <h2 class="no-bottom-margin">Bliss Club: Sex Tips for Creative Lovers</h2>
+    ### Reading Now
+    ## The Clean Coder: A Code of Conduct for Professional Programmers
+    <br/><br/>
+    ### 2023 April
+    ## Clean Code: A Handbook of Agile Software Craftsmanship
+    <br/><br/>
+    ### 2023 March
+    ## A Tour of C++, Third Edition
+    <br/><br/>
+    ### 2023 February
+    ## How Linux Works: What Every Superuser Should Know
+    <br/><br/>
+    ### 2022 November
+    ## [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
+    <br/><br/>
+    ### 2022 June
+    ## Start Small, Stay Small: A Developer's Guide to Launching a Startup
+    <br/><br/>
+    ### 2022 March
+    ## [Learn Vimscript The Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
+    <br/><br/>
+    ### 2022 February
+    ## Don't Sleep, There Are Snakes: Life and Language in the Amazonian Jungle
+    <br/><br/>
+    ### 2022 January
+    ## System Design Interview - An Insider's Guide
+    <br/><br/>
+    ### 2021 December
+    ## Why We Sleep: Unlocking the Power of Sleep and Dreams
+    <br/><br/>
+    ### 2021 November
+    ## [On the Opportunities and Risks of Foundation Models](https://arxiv.org/abs/2108.07258)
+    <br/>
+    ## Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking
+    <br/><br/>
+    ### 2021 October
+    ## Code: The Hidden Language of Computer Hardware and Software
+    <br/>
+    ## A Brief History of Earth: Four Billion Years in Eight Chapters
+    <br/>
+    ## Bliss Club: Sex Tips for Creative Lovers
   </article>
 </div>

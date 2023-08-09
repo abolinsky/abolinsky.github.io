@@ -8,6 +8,9 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
+    <h2 class="no-bottom-margin">The Idea Factory: Bell Labs and the Great Age of American Innovation</h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2023 July</h3>
     <h2 class="no-bottom-margin">Dive Into Design Patterns</h2>
     <br><br>
     <h3 class="no-bottom-margin">2023 April</h3>

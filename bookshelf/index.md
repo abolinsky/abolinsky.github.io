@@ -53,8 +53,6 @@ avatar: /img/avatar-code.png
     <h3 class="no-bottom-margin">2021 October</h3>
     <h2 class="no-bottom-margin">Code: The Hidden Language of Computer Hardware and Software</h2>
     <br>
-    <h2 class="no-bottom-margin">Bliss Club: Sex Tips for Creative Lovers</h2>
-    <br>
     <h2 class="no-bottom-margin">A Brief History of Earth: Four Billion Years in Eight Chapters</h2>
   </article>
 </div>

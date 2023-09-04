@@ -8,6 +8,9 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
+    <h2 class="no-bottom-margin"><a href="https://www.ibiblio.org/kuphaldt/electricCircuits/AC/index.html">Lessons in Electric Circuits: Volume 2 - AC</a></h2>
+    <br><br>
+    <h3 class="no-bottom-margin">2023 September</h3>
     <h2 class="no-bottom-margin"><a href="https://www.ibiblio.org/kuphaldt/electricCircuits/DC/index.html">Lessons in Electric Circuits: Volume 1 - DC</a></h2>
     <br><br>
     <h3 class="no-bottom-margin">2023 August</h3>

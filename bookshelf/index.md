@@ -8,7 +8,7 @@ avatar: /img/avatar-code.png
 <div class="posts">
   <article class="post">
     <h3 class="no-bottom-margin">Reading Now</h3>
-    <h2 class="no-bottom-margin">Real-Time Collision Detection</h2>
+    <h2 class="no-bottom-margin">API Design for C++</h2>
     <br><br>
     <h3 class="no-bottom-margin">2024 February</h3>
     <h2 class="no-bottom-margin">Game Engine Architecture</h2>

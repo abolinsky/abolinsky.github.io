@@ -67,13 +67,9 @@ footer {
 
 .PageNavigation a {
   display: block;
-  width: 33.33%;
+  width: 50%;
   float: left;
   margin: 1em 0;
-}
-
-.PageNavigation .center {
-  text-align: center;
 }
 
 .PageNavigation .next {

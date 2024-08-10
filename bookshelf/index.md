@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: reading_list
 title: bookshelf
 category: bookblog
 avatar: /img/avatar-code.png

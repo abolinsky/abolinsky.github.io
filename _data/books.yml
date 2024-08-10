@@ -1,0 +1,65 @@
+- date: 2024-06-01
+  title: API Design for C++
+  status: reading
+
+- date: 2024-02-01
+  title: Game Engine Architecture
+
+- date: 2023-11-01
+  title: Lessons in Electric Circuits - Volume 2 - AC
+  url: https://www.ibiblio.org/kuphaldt/electricCircuits/AC/index.html
+
+- date: 2023-09-01
+  title: Lessons in Electric Circuits - Volume 1 - DC
+  url: https://www.ibiblio.org/kuphaldt/electricCircuits/DC/index.html
+
+- date: 2023-08-01
+  title: The Idea Factory - Bell Labs and the Great Age of American Innovation
+
+- date: 2023-07-01
+  title: Dive Into Design Patterns
+
+- date: 2023-04-02
+  title: The Clean Coder - A Code of Conduct for Professional Programmers
+
+- date: 2023-04-01
+  title: Clean Code - A Handbook of Agile Software Craftsmanship
+
+- date: 2023-03-01
+  title: A Tour of C++, Third Edition
+
+- date: 2023-02-01
+  title: How Linux Works - What Every Superuser Should Know
+
+- date: 2022-11-01
+  title: Algorithms for Modern Hardware
+  url: https://en.algorithmica.org/hpc/
+
+- date: 2022-06-01
+  title: Start Small, Stay Small - A Developer's Guide to Launching a Startup
+
+- date: 2022-03-01
+  title: Learn Vimscript The Hard Way
+  url: https://learnvimscriptthehardway.stevelosh.com/
+
+- date: 2022-02-01
+  title: Don't Sleep, There Are Snakes - Life and Language in the Amazonian Jungle
+
+- date: 2022-01-01
+  title: System Design Interview - An Insider's Guide
+
+- date: 2021-12-01
+  title: Why We Sleep - Unlocking the Power of Sleep and Dreams
+
+- date: 2021-11-02
+  title: Salt, Fat, Acid, Heat - Mastering the Elements of Good Cooking
+
+- date: 2021-11-01
+  title: On the Opportunities and Risks of Foundation Models
+  url: https://arxiv.org/abs/2108.07258
+
+- date: 2021-10-02
+  title: A Brief History of Earth - Four Billion Years in Eight Chapters
+
+- date: 2021-10-01
+  title: Code - The Hidden Language of Computer Hardware and Software

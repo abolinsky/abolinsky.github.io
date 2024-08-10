@@ -29,6 +29,30 @@
   margin-bottom: 0px;
 }
 
+.year-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.year-header::before,
+.year-header::after {
+  content: "─────────────────────────";
+  color: #ddd;
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: clip;
+  flex: 1;
+}
+
+.year-header .year {
+  padding: 0 10px;
+}
+
 .PageNavigation {
   font-size: 14px;
   display: block;

@@ -45,8 +45,8 @@
           {% endif %}
         </div>
 
-      <h3 class="no-bottom-margin">{{ page.date | date: '%Y %B %d' }}</h3>
-      <h1>{{ page.title }}</h1>
+      <h1 class="no-bottom-margin">{{ page.title }}</h1>
+      <h4>{{ page.date | date: '%Y %B %d' }}</h4>
       {{ content }}
 
       <img id="stamp" style="max-width:48px" src="/img/alexander-seal.jpg"/>

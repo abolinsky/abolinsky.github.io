@@ -23,7 +23,7 @@ layout: default
       {% if book.status == "reading" %}
         {% if current_month != "Currently Reading" %}
           {% if current_month != "" %}</div>{% endif %}
-          <h4 class="no-bottom-margin">Currently Reading</h4>
+          <h4 class="no-bottom-margin"><em>Currently Reading</em></h4>
           <div>
           {% assign current_month = "Currently Reading" %}
         {% endif %}

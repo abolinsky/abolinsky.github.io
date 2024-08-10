@@ -3,3 +3,4 @@ Gemfile.lock
 .jekyll-cache/
 _site/
 .DS_Store
+.jekyll-metadata

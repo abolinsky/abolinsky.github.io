@@ -12,4 +12,4 @@ Tonight I completely filled my first notebook with Kanji. The book includes my s
 
 As of tonight, I have learned 1340 Kanji (not including readings).
 
-<img src="{{ '/img/kanji-nov-to-jan.gif' }}"/>
+<img src="{{ '/assets/img/kanji-nov-to-jan.gif' }}"/>

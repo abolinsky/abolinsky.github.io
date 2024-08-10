@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
     <title>{{ site.github.owner_name }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,7 +22,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <img id="avatar" src="{{ page.avatar | default: '/img/avatar.jpg' }}"/>
+        <img id="avatar" src="{{ page.avatar | default: '/assets/img/avatar.jpg' }}"/>
         <br/><br/>
 
         {% if site.github.is_project_page %}
@@ -66,14 +66,9 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        {% if site.github.is_user_page %}
           <p class="view">
-          see my <a href="{{ '/img/resume.pdf' }}" target="_blank">resume</a>, <a href="{{ site.github.owner_url }}" target="_blank">GitHub</a>, and <a href="{{ '/img/cse465_Project3_Report.pdf' }}" target="_blank">writing</a> <br/> or contact me at ahbolinsky@gmail.com <br/>
+          see my <a href="{{ '/assets/img/resume.pdf' }}" target="_blank">resume</a>, <a href="https://www.github.com/abolinsky" target="_blank">GitHub</a>, and <a href="{{ '/assets/img/cse465_Project3_Report.pdf' }}" target="_blank">writing</a> <br/> or contact me at ahbolinsky@gmail.com <br/>
           </p>
-        {% endif %}
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>

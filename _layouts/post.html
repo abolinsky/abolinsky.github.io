@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
     <title>{{ site.github.owner_name }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,10 +24,10 @@
       <header class="post-header">
         {% if page.category == "allblog" %}
         <a href="{{ site.url }}{{ '/blog/' }}">
-        <img id="avatar" src="{{ '/img/avatar-travel.png' }}"/>
+        <img id="avatar" src="{{ '/assets/img/avatar-travel.png' }}"/>
         {% elsif page.category == "codeblog" or page.category == "bookblog" %}
         <a href="{{ site.url }}{{ '/code/' }}">
-        <img id="avatar" src="{{ '/img/avatar-code.png' }}"/>
+        <img id="avatar" src="{{ '/assets/img/avatar-code.png' }}"/>
         {% endif %}
         </a>
       </header>
@@ -39,7 +39,7 @@
           &laquo; {{ page.previous.title | truncatewords: 3 }}
           {% endif %}
           </b></a>
-          <a class="center" href="{{ '/blog/' }}"><b>Home</b></a>
+          <a class="center" href="{{ '/blog/' }}"><b>blog</b></a>
           {% if page.next.url %}
           <a class="next" href="{{page.next.url}}"><b>{{ page.next.title | truncatewords: 3 }} &raquo;</b></a>
           {% endif %}
@@ -49,7 +49,7 @@
       <h4>{{ page.date | date: '%Y %B %d' }}</h4>
       {{ content }}
 
-      <img id="stamp" style="max-width:48px" src="/img/alexander-seal.jpg"/>
+      <img id="stamp" style="max-width:48px" src="/assets/img/alexander-seal.jpg"/>
       </section>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>

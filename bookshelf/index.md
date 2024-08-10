@@ -2,7 +2,7 @@
 layout: default
 title: bookshelf
 category: bookblog
-avatar: /img/avatar-code.png
+avatar: /assets/img/avatar-code.png
 ---
 
 <div class="posts">

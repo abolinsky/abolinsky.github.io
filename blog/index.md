@@ -1,12 +1,12 @@
 ---
 layout: default
 title: blog
-avatar: /img/avatar-travel.png
+avatar: /assets/img/avatar-travel.png
 category: allblog
 ---
 
 <div class="posts">
-  
+
   {% assign post_count=0 %}
 
   {% for post in site.posts %}

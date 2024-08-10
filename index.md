@@ -1,7 +1,7 @@
 ---
 layout: default
 category: home
-avatar: /img/avatar.jpg
+avatar: /assets/img/avatar.jpg
 ---
 
 # Alexander Bolinsky

@@ -54,6 +54,20 @@ a:hover {
   opacity: 0.7;
 }
 
+a.typing-hidden::before,
+a.typing-hidden::after {
+  content: none;
+}
+
+img.typing-hidden,
+iframe.typing-hidden {
+  visibility: hidden;
+}
+
+li.typing-hidden::marker {
+  color: transparent;
+}
+
 /* Navigation */
 nav {
   display: flex;

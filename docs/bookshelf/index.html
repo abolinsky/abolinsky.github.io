@@ -130,6 +130,94 @@
         document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
+
+    
+    (function() {
+      const main = document.querySelector('main');
+      if (!main) return;
+
+      
+      main.querySelectorAll('a').forEach(a => a.classList.add('typing-hidden'));
+      main.querySelectorAll('img, iframe').forEach(el => el.classList.add('typing-hidden'));
+      main.querySelectorAll('li').forEach(li => li.classList.add('typing-hidden'));
+
+      
+      const items = [];
+      const walker = document.createTreeWalker(main, NodeFilter.SHOW_ALL, {
+        acceptNode: function(node) {
+          if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          if (node.nodeType === Node.ELEMENT_NODE && (node.tagName === 'IMG' || node.tagName === 'IFRAME')) {
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          return NodeFilter.FILTER_SKIP;
+        }
+      }, false);
+
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (node.nodeType === Node.TEXT_NODE) {
+          items.push({
+            type: 'text',
+            node: node,
+            text: node.textContent,
+            parent: node.parentElement
+          });
+        } else {
+          items.push({
+            type: 'media',
+            node: node
+          });
+        }
+      }
+
+      
+      items.forEach(item => {
+        if (item.type === 'text') item.node.textContent = '';
+      });
+
+      
+      let itemIndex = 0;
+      let charIndex = 0;
+      const speed = 5; 
+
+      function type() {
+        if (itemIndex >= items.length) return;
+
+        const current = items[itemIndex];
+
+        if (current.type === 'media') {
+          current.node.classList.remove('typing-hidden');
+          itemIndex++;
+          setTimeout(type, speed);
+          return;
+        }
+
+        
+        if (charIndex === 0 && current.parent && current.parent.tagName === 'A') {
+          current.parent.classList.remove('typing-hidden');
+        }
+
+        
+        if (charIndex === 0) {
+          const li = current.node.parentElement?.closest('li');
+          if (li) li.classList.remove('typing-hidden');
+        }
+
+        if (charIndex < current.text.length) {
+          current.node.textContent += current.text[charIndex];
+          charIndex++;
+          setTimeout(type, speed);
+        } else {
+          itemIndex++;
+          charIndex = 0;
+          setTimeout(type, speed);
+        }
+      }
+
+      type();
+    })();
   </script>
 </body>
 </html>

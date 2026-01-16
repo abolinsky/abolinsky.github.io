@@ -30,190 +30,85 @@
   <main>
     
 
-
-
-  
-<div class="book-entry">
+<div class="book-list"><div class="book-entry">
   <span class="book-date">reading</span>
   Complete Nepali
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2025-07</span>
   Zen and the Art of Motorcycle Maintenance - An Inquiry Into Values
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2025-07</span>
   Course Design Formula - How to Teach Anything to Anyone Online
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2025-06</span>
   The Fifth Discipline - The Art and Practice of the Learning Organization
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2025-01</span>
   Assessment Essentials - Planning, Implementing, and Improving Assessment in Higher Education
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2024-09</span>
   C&#43;&#43; Concurrency in Action, Second Edition
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2024-06</span>
   API Design for C&#43;&#43;
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2024-02</span>
   Game Engine Architecture
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-11</span>
   <a href="https://www.ibiblio.org/kuphaldt/electricCircuits/AC/index.html">Lessons in Electric Circuits - Volume 2 - AC</a>
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-09</span>
   <a href="https://www.ibiblio.org/kuphaldt/electricCircuits/DC/index.html">Lessons in Electric Circuits - Volume 1 - DC</a>
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-08</span>
   The Idea Factory - Bell Labs and the Great Age of American Innovation
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-07</span>
   Dive Into Design Patterns
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-04</span>
   The Clean Coder - A Code of Conduct for Professional Programmers
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-04</span>
   Clean Code - A Handbook of Agile Software Craftsmanship
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-03</span>
   A Tour of C&#43;&#43;, Third Edition
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2023-02</span>
   How Linux Works - What Every Superuser Should Know
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2022-11</span>
   <a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a>
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2022-06</span>
   Start Small, Stay Small - A Developer&#39;s Guide to Launching a Startup
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2022-03</span>
   <a href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript The Hard Way</a>
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2022-02</span>
   Don&#39;t Sleep, There Are Snakes - Life and Language in the Amazonian Jungle
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2022-01</span>
   System Design Interview - An Insider&#39;s Guide
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2021-12</span>
   Why We Sleep - Unlocking the Power of Sleep and Dreams
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2021-11</span>
   Salt, Fat, Acid, Heat - Mastering the Elements of Good Cooking
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2021-11</span>
   <a href="https://arxiv.org/abs/2108.07258">On the Opportunities and Risks of Foundation Models</a>
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2021-10</span>
   A Brief History of Earth - Four Billion Years in Eight Chapters
-</div>
-  
-
-  
-<div class="book-entry">
+</div><div class="book-entry">
   <span class="book-date">2021-10</span>
   Code - The Hidden Language of Computer Hardware and Software
-</div>
-  
-
+</div></div>
 
   </main>
   <script>
@@ -234,6 +129,24 @@
       if (saved === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
       }
+    })();
+    
+    (function() {
+      const colors = ['var(--link-1)', 'var(--link-2)', 'var(--link-3)', 'var(--link-4)'];
+      
+      const contentLinks = document.querySelectorAll('main > :not(.post-list):not(.post-nav):not(.book-list) a:not(.post-nav a)');
+      let i = 0;
+      contentLinks.forEach((link) => {
+        if (!link.closest('.post-list') && !link.closest('.post-nav') && !link.closest('.book-list') && !link.closest('footer')) {
+          link.style.color = colors[i % 4];
+          i++;
+        }
+      });
+      
+      const bookLinks = document.querySelectorAll('.book-list .book-entry a');
+      bookLinks.forEach((link, j) => {
+        link.style.color = colors[j % 4];
+      });
     })();
   </script>
 </body>

@@ -1,17 +1,18 @@
 {{ define "main" }}
 {{ $books := .Pages.ByDate.Reverse }}
-
-{{ range $books }}
-  {{ if .Params.reading }}
+<div class="book-list">
+{{- range $books -}}
+{{- if .Params.reading -}}
 <div class="book-entry">
   <span class="book-date">reading</span>
   {{ if .Params.externalUrl }}<a href="{{ .Params.externalUrl }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}
 </div>
-  {{ else }}
+{{- else -}}
 <div class="book-entry">
   <span class="book-date">{{ .Date.Format "2006-01" }}</span>
   {{ if .Params.externalUrl }}<a href="{{ .Params.externalUrl }}">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}
 </div>
-  {{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
+</div>
 {{ end }}

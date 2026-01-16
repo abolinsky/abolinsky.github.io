@@ -31,8 +31,8 @@
   <main>
     
 <p>Hi, I&rsquo;m Alexander Bolinsky.</p>
-<p>I&rsquo;m a software engineer and educator living in Tokyo and working to empower the next generation of engineers and makers at <a href="https://woven.toyota/" target="_blank" rel="noopener">Woven by Toyota</a> and <a href="https://tokyocodingclub.co.jp/" target="_blank" rel="noopener">Tokyo Coding Club</a>.</p>
-<p>In my spare time I&rsquo;m building random things, reading, cooking, learning languages, playing squash, tinkering with electronics, and dancing like a fool with <a href="https://www.kikusuiren.com/" target="_blank" rel="noopener">菊水連</a>.</p>
+<p>I&rsquo;m a software engineer and educator living in Tokyo and working to empower the next generation of engineers and makers at <a href="https://woven.toyota/" target="_blank" rel="noopener">Woven by Toyota</a> and <a href="https://tokyocodingclub.co.jp/" target="_blank" rel="noopener">Tokyo Coding Club</a>. I also teach squash at <a href="https://www.tokyoamericanclub.org/" target="_blank" rel="noopener">Tokyo American Club</a>.</p>
+<p>In my spare time I&rsquo;m building things, learning Nepali and Japanese, biohacking, reading, cooking, tinkering with electronics, traveling, and dancing like a fool with <a href="https://www.kikusuiren.com/" target="_blank" rel="noopener">菊水連</a>.</p>
 <p>Most recently a friend and I built <a href="https://www.subletters.fun" target="_blank" rel="noopener">subletters.fun</a>!</p>
 
 <footer>
@@ -62,24 +62,6 @@
       if (saved === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
       }
-    })();
-    
-    (function() {
-      const colors = ['var(--link-1)', 'var(--link-2)', 'var(--link-3)', 'var(--link-4)'];
-      
-      const contentLinks = document.querySelectorAll('main > :not(.post-list):not(.post-nav):not(.book-list) a:not(.post-nav a)');
-      let i = 0;
-      contentLinks.forEach((link) => {
-        if (!link.closest('.post-list') && !link.closest('.post-nav') && !link.closest('.book-list') && !link.closest('footer')) {
-          link.style.color = colors[i % 4];
-          i++;
-        }
-      });
-      
-      const bookLinks = document.querySelectorAll('.book-list .book-entry a');
-      bookLinks.forEach((link, j) => {
-        link.style.color = colors[j % 4];
-      });
     })();
   </script>
 </body>

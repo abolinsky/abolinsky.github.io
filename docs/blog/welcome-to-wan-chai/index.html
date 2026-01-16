@@ -76,24 +76,6 @@ Tomorrow I wake up early to hike the Dragon&rsquo;s Back trail on the South East
         document.documentElement.setAttribute('data-theme', 'light');
       }
     })();
-    
-    (function() {
-      const colors = ['var(--link-1)', 'var(--link-2)', 'var(--link-3)', 'var(--link-4)'];
-      
-      const contentLinks = document.querySelectorAll('main > :not(.post-list):not(.post-nav):not(.book-list) a:not(.post-nav a)');
-      let i = 0;
-      contentLinks.forEach((link) => {
-        if (!link.closest('.post-list') && !link.closest('.post-nav') && !link.closest('.book-list') && !link.closest('footer')) {
-          link.style.color = colors[i % 4];
-          i++;
-        }
-      });
-      
-      const bookLinks = document.querySelectorAll('.book-list .book-entry a');
-      bookLinks.forEach((link, j) => {
-        link.style.color = colors[j % 4];
-      });
-    })();
   </script>
 </body>
 </html>

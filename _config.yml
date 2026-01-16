@@ -1,7 +1,0 @@
-theme: jekyll-theme-minimal
-title: abolinsky
-description: My home base
-
-collections:
-  category:
-    output: true

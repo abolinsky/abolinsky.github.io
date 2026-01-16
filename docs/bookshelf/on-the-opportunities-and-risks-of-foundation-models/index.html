@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>On the Opportunities and Risks of Foundation Models | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <a href="/blog/">blog</a>
+    <span class="active">bookshelf</span>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<article>
+  <h1>On the Opportunities and Risks of Foundation Models</h1>
+  <span class="post-date">2021-11-01</span>
+  
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

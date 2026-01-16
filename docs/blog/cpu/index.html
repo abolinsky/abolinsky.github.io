@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPU in a Weekend | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <span class="active">blog</span>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<div class="post-nav">
+  /<a href="https://abolinsky.github.io/blog/taiwan/">newer</a>
+  /<a href="/blog/">blog</a>
+  /<a href="https://abolinsky.github.io/blog/passing-jlpt-n2/">older</a>
+</div>
+
+<article>
+  <h1>CPU in a Weekend</h1>
+  <span class="post-date">2022-01-25</span>
+  <img class="post-img" src="/img/cpu.png"/>
+<p>I made a toy 12-bit 8 ISA CPU.</p>
+<p>4 bit op-code, 8 bit address, 8 bit ALU.</p>
+<p>Implements LDA (load accumulator with value at address), STA (store accumulator at address), ADD (accumulator + register b), SUB (accumulator - register b), MBA (move accumulator to register b), JMP (jump to address), JZ (jump to address if zero flag set), HLT (halt), with op-codes 0001 to 0111 and 1111, respectively.</p>
+<p>You can write your own program, <a href="https://circuitverse.org/users/117852/projects/cpu-1e02a3e1-452c-4c29-8f3f-6a011018be13" target="_blank" rel="noopener">load it into the RAM, and press the start button to watch magic happen</a>.</p>
+<iframe src="https://circuitverse.org/simulator/embed/cpu-1e02a3e1-452c-4c29-8f3f-6a011018be13?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+<p>Examples:</p>
+<p>0b000000000000 0b000000001010 0b000100000001 0b010100000000 0b000100000000 0b001100000000 0b001000000000 0b010110000100 0b111111111111</p>
+<p>0x0: 0
+0x1: 5
+0x2: LDA 1
+0x3: MBA
+0x4: LDA 0
+0x5: ADD
+0x6: STA 0
+0x7: JMP 4
+0x8: HLT</p>
+<p>0b000100001011 0b010100000000 0b000100001100 0b010000000000 0b011100000110 0b011000000011 0b000100001100 0b010000000000 0b011100001010 0b011000000111 0b111111111111 0b000000000001 0b000000000011</p>
+<p>0x0: LDA 11
+0x1: MBA
+0x2: LDA 12
+0x3: SUB
+0x4: JZ 6
+0x5: JMP 3
+0x6: LDA 8
+0x7: SUB
+0x8: JZ 10
+0x9: JMP 7
+0xa: HLT
+0xb: 1
+0xc: 3</p>
+
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

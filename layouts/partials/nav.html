@@ -1,0 +1,17 @@
+<nav>
+  {{ $currentSection := "" }}
+  {{ if eq .RelPermalink "/" }}
+    {{ $currentSection = "home" }}
+  {{ else if hasPrefix .RelPermalink "/blog" }}
+    {{ $currentSection = "blog" }}
+  {{ else if hasPrefix .RelPermalink "/bookshelf" }}
+    {{ $currentSection = "bookshelf" }}
+  {{ end }}
+
+  <div class="nav-links">
+    {{ if eq $currentSection "home" }}<span class="active">home</span>{{ else }}<a href="/">home</a>{{ end }}
+    {{ if eq $currentSection "blog" }}<span class="active">blog</span>{{ else }}<a href="/blog/">blog</a>{{ end }}
+    {{ if eq $currentSection "bookshelf" }}<span class="active">bookshelf</span>{{ else }}<a href="/bookshelf/">bookshelf</a>{{ end }}
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ if eq .Section "blog" }}
+<div class="post-nav">
+  {{ with .NextInSection }}/<a href="{{ .Permalink }}">newer</a>{{ end }}
+  /<a href="/blog/">blog</a>
+  {{ with .PrevInSection }}/<a href="{{ .Permalink }}">older</a>{{ end }}
+</div>
+{{ end }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+  {{ .Content }}
+</article>
+{{ end }}

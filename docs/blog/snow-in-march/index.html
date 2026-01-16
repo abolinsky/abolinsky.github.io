@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>３月の雪 | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <span class="active">blog</span>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<div class="post-nav">
+  /<a href="https://abolinsky.github.io/blog/black-water/">newer</a>
+  /<a href="/blog/">blog</a>
+  /<a href="https://abolinsky.github.io/blog/kanji-update/">older</a>
+</div>
+
+<article>
+  <h1>３月の雪</h1>
+  <span class="post-date">2020-03-14</span>
+  <p>先週は予想より大変だったので、金曜日が終わったらフラフラするほど疲れていた。目が半分しかあいていない状態で映画を観始めた。知らない間に眠ってしまった。</p>
+<p>今朝起きたらとても寒いことに気づいた。雨がしとしと降っていた。毛布に包まれた僕はぽかぽかベッドを出ないことにした。雨は降り続け、徐々に雪となった。嬉しいなと思いつつ、ゆっくり目が閉じてきてまた寝てしまった。</p>
+
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+baseURL = "https://abolinsky.github.io/"
+languageCode = "en-us"
+title = "abolinsky"
+publishDir = "docs"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown (for embeds)
+
+[params]
+  description = "My home base"
+  email = "ahbolinsky@gmail.com"
+  github = "https://www.github.com/abolinsky"

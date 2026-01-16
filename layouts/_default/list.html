@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{ if eq .Section "blog" }}
+<ul class="post-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

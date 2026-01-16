@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, Naps, and Harbor | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <span class="active">blog</span>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<div class="post-nav">
+  /<a href="https://abolinsky.github.io/blog/victoria-peak/">newer</a>
+  /<a href="/blog/">blog</a>
+  /<a href="https://abolinsky.github.io/blog/dragons-back/">older</a>
+</div>
+
+<article>
+  <h1>Food, Naps, and Harbor</h1>
+  <span class="post-date">2017-07-21</span>
+  <p>I slept for almost twelve hours after hiking Dragon&rsquo;s Back, and when I woke up, I realized I hadn&rsquo;t eaten anything in almost 24 hours. So I found this delicious Japanese restaurant on my street that was open at 7:15am and grabbed some food to go for myself and one of my hostel-mates. <img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_072218.jpeg'/><img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_074221.jpeg'/> Then I took a nap. When I woke up, I bought my 21-day Japanese Rail Pass, was hungry for some lunch, and went out in search of a pastry shop because I was craving pork floss and red bean paste buns. Sure enough a few blocks and turns away, I found just the place. <img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_120036.jpeg'/><img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_120105.jpeg'/> When I got back, I ate and then for the rest of the afternoon I was half studying Japanese and half napping. When I finally came to, I met three new roommates and ventured out to find dinner with two of them. We ended up in the third floor of a market that was so cold we could see our breath as if we were sitting in an open-floor freezer. <img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_191329.jpeg'/> I actually thought it felt amazing, considering about 30% of my body was now sunburned, but soon enough we were out and explored Wan Chai toward the harbor facing mainland Hong Kong. The humidity was low at about 70%, and there was a slight breeze blowing in from the harbor, which made for a nice evening out. The city lights were beautiful, both in and across the water. <img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_201115.jpeg'/><img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_203946~2.jpeg'/> And of course there was this guy, asking to get his butt kicked in arm wrestling by the pier. <img class='post-img' src='/img/travel/SE_Asia/Day4/IMG_20170721_204718~2.jpeg'/></p>
+<p>All in all, lazy day.</p>
+
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

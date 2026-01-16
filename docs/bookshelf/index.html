@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bookshelf | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <a href="/blog/">blog</a>
+    <span class="active">bookshelf</span>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+
+
+  
+<div class="book-entry">
+  <span class="book-date">reading</span>
+  Complete Nepali
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2025-07</span>
+  Zen and the Art of Motorcycle Maintenance - An Inquiry Into Values
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2025-07</span>
+  Course Design Formula - How to Teach Anything to Anyone Online
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2025-06</span>
+  The Fifth Discipline - The Art and Practice of the Learning Organization
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2025-01</span>
+  Assessment Essentials - Planning, Implementing, and Improving Assessment in Higher Education
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2024-09</span>
+  C&#43;&#43; Concurrency in Action, Second Edition
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2024-06</span>
+  API Design for C&#43;&#43;
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2024-02</span>
+  Game Engine Architecture
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-11</span>
+  <a href="https://www.ibiblio.org/kuphaldt/electricCircuits/AC/index.html">Lessons in Electric Circuits - Volume 2 - AC</a>
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-09</span>
+  <a href="https://www.ibiblio.org/kuphaldt/electricCircuits/DC/index.html">Lessons in Electric Circuits - Volume 1 - DC</a>
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-08</span>
+  The Idea Factory - Bell Labs and the Great Age of American Innovation
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-07</span>
+  Dive Into Design Patterns
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-04</span>
+  The Clean Coder - A Code of Conduct for Professional Programmers
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-04</span>
+  Clean Code - A Handbook of Agile Software Craftsmanship
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-03</span>
+  A Tour of C&#43;&#43;, Third Edition
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2023-02</span>
+  How Linux Works - What Every Superuser Should Know
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2022-11</span>
+  <a href="https://en.algorithmica.org/hpc/">Algorithms for Modern Hardware</a>
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2022-06</span>
+  Start Small, Stay Small - A Developer&#39;s Guide to Launching a Startup
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2022-03</span>
+  <a href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript The Hard Way</a>
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2022-02</span>
+  Don&#39;t Sleep, There Are Snakes - Life and Language in the Amazonian Jungle
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2022-01</span>
+  System Design Interview - An Insider&#39;s Guide
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2021-12</span>
+  Why We Sleep - Unlocking the Power of Sleep and Dreams
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2021-11</span>
+  Salt, Fat, Acid, Heat - Mastering the Elements of Good Cooking
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2021-11</span>
+  <a href="https://arxiv.org/abs/2108.07258">On the Opportunities and Risks of Foundation Models</a>
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2021-10</span>
+  A Brief History of Earth - Four Billion Years in Eight Chapters
+</div>
+  
+
+  
+<div class="book-entry">
+  <span class="book-date">2021-10</span>
+  Code - The Hidden Language of Computer Hardware and Software
+</div>
+  
+
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

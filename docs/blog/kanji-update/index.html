@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanji Update | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <span class="active">blog</span>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<div class="post-nav">
+  /<a href="https://abolinsky.github.io/blog/snow-in-march/">newer</a>
+  /<a href="/blog/">blog</a>
+  /<a href="https://abolinsky.github.io/blog/learning-japanese/">older</a>
+</div>
+
+<article>
+  <h1>Kanji Update</h1>
+  <span class="post-date">2018-01-04</span>
+  <p>I feel completely comfortable saying that my daily routine of learning Kanji is entirely a habit now. If I miss a day, something feels really off - and I then have reviews piling up, which makes more work for the day or two afterwards.</p>
+<p>Tonight I completely filled my first notebook with Kanji. The book includes my studies every day between November 3, 2017 and January 4, 2018, with the exception of November 5, November 26, and December 26, which are days that I missed. I decided to scan in the entire notebook (80 pages) and turn the resulting scanned pages into an animation, which I&rsquo;ve put below.</p>
+<p>As of tonight, I have learned 1340 Kanji (not including readings).</p>
+<img src="/img/kanji-nov-to-jan.gif"/>
+
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

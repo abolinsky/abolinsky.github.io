@@ -1,0 +1,45 @@
++++
+title = "CPU in a Weekend"
+date = 2022-01-25
++++
+<img class="post-img" src="/img/cpu.png"/>
+
+I made a toy 12-bit 8 ISA CPU.
+
+4 bit op-code, 8 bit address, 8 bit ALU.
+
+Implements LDA (load accumulator with value at address), STA (store accumulator at address), ADD (accumulator + register b), SUB (accumulator - register b), MBA (move accumulator to register b), JMP (jump to address), JZ (jump to address if zero flag set), HLT (halt), with op-codes 0001 to 0111 and 1111, respectively.
+
+You can write your own program, [load it into the RAM, and press the start button to watch magic happen](https://circuitverse.org/users/117852/projects/cpu-1e02a3e1-452c-4c29-8f3f-6a011018be13).
+
+<iframe src="https://circuitverse.org/simulator/embed/cpu-1e02a3e1-452c-4c29-8f3f-6a011018be13?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+
+Examples:
+
+0b000000000000 0b000000001010 0b000100000001 0b010100000000 0b000100000000 0b001100000000 0b001000000000 0b010110000100 0b111111111111
+
+0x0: 0
+0x1: 5
+0x2: LDA 1
+0x3: MBA
+0x4: LDA 0
+0x5: ADD
+0x6: STA 0
+0x7: JMP 4
+0x8: HLT
+
+0b000100001011 0b010100000000 0b000100001100 0b010000000000 0b011100000110 0b011000000011 0b000100001100 0b010000000000 0b011100001010 0b011000000111 0b111111111111 0b000000000001 0b000000000011
+
+0x0: LDA 11
+0x1: MBA
+0x2: LDA 12
+0x3: SUB
+0x4: JZ 6
+0x5: JMP 3
+0x6: LDA 8
+0x7: SUB
+0x8: JZ 10
+0x9: JMP 7
+0xa: HLT
+0xb: 1
+0xc: 3

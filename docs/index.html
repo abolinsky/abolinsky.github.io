@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.154.5">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.github.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <span class="active">home</span>
+    <a href="/blog/">blog</a>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+<h1 id="alexander-bolinsky">Alexander Bolinsky</h1>
+<p>I am a software engineer and educator living in Tokyo and working to empower the next generation of engineers and makers at <a href="https://woven.toyota/" target="_blank" rel="noopener">Woven by Toyota</a> and <a href="https://tokyocodingclub.co.jp/" target="_blank" rel="noopener">Tokyo Coding Club</a>.</p>
+<p>In my spare time I am building random things, reading, cooking, learning languages, and dancing like a fool with <a href="https://www.kikusuiren.com/" target="_blank" rel="noopener">菊水連</a>.</p>
+<p>Most recently a friend and I built <a href="https://www.subletters.fun" target="_blank" rel="noopener">subletters.fun</a>!</p>
+
+<footer>
+  <div class="separator">- - -</div>
+  <a href="/img/resume.pdf">resume</a>
+  <a href="https://www.github.com/abolinsky">github</a>
+  <a href="mailto:ahbolinsky@gmail.com">email</a>
+</footer>
+
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</body>
+</html>

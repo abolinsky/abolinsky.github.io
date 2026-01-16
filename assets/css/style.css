@@ -128,12 +128,14 @@ p {
 }
 
 .post-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .post-date {
   color: var(--muted);
-  margin-right: 1rem;
 }
 
 /* Blog post content */
@@ -154,6 +156,9 @@ article iframe {
 
 /* Bookshelf */
 .book-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 

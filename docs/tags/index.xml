@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on abolinsky</title>
-    <link>https://abolinsky.github.io/tags/</link>
+    <link>https://abolinsky.io/tags/</link>
     <description>Recent content in Tags on abolinsky</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://abolinsky.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://abolinsky.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,4 +1,4 @@
-baseURL = "https://abolinsky.github.io/"
+baseURL = "https://abolinsky.io/"
 languageCode = "en-us"
 title = "abolinsky"
 publishDir = "docs"

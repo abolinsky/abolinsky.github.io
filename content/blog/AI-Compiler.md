@@ -3,7 +3,7 @@ title = "AI is the New Compiler"
 date = 2026-01-30
 +++
 
-In the 1957, IBM introduced the first mainstream compiler, FORTRAN, and revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
+In 1957, IBM introduced the first mainstream compiler, FORTRAN, and revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
 
 To illustrate, consider implementing a chess engine—a showcase of human creativity involving strategy, evaluation functions, and search algorithms.
 

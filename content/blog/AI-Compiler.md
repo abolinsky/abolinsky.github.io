@@ -10,27 +10,23 @@ To illustrate, consider implementing a chess engine—a showcase of human creati
 Before compilers, programmers hand-wrote assembly code directly manipulating hardware registers and memory, as in this illustrative example adapted from the Bernstein Chess Program on the IBM 704. Here's a snippet of board initialization and a simplified move evaluation (the full program was thousands of instructions):
 
 ```
-; Assume BOARD is an array of 64 words starting at address 1000
-CLA ZERO      ; Clear accumulator
-LXD =64,1     ; Load index register 1 with 64 (number of squares)
+CLA ZERO
+LXD =64,1
 INITLOOP:
-STO 1000,1    ; Store 0 to BOARD + index (clear board)
-TIX INITLOOP,1,1 ; Decrement index and loop if >0
+STO 1000,1
+TIX INITLOOP,1,1
 
-; Set up white pawns (illustrative, pawn value = 1)
 CLA ONE
-LXD =8,1      ; 8 pawns on row 2 (addresses 1008-1015 approx.)
+LXD =8,1
 PAWNLOOP:
-STO 1008,1    ; Store 1 to pawn positions
+STO 1008,1
 TIX PAWNLOOP,1,1
 
-; Simplified move evaluation: sum material (positive for white pieces)
 CLA ZERO
 LXD =64,1
 EVALLOOP:
-ADD 1000,1    ; Add board square value to accumulator
+ADD 1000,1
 TIX EVALLOOP,1,1
-; Accumulator now holds net material score
 ```
 
 This required deep knowledge of the 704's 36-bit architecture, index registers, and manual optimization for vacuum-tube speed.
@@ -38,19 +34,16 @@ This required deep knowledge of the 704's 36-bit architecture, index registers, 
 With the advent of compilers like FORTRAN for the IBM 704, programmers could express logic more naturally, shifting their focus to algorithms rather than hardware intricacies:
 
 ```
-C Board initialization and move evaluation
       DIMENSION BOARD(8,8)
       DO 10 I=1,8
         DO 10 J=1,8
           BOARD(I,J)=0
    10 CONTINUE
 
-C Set white pawns on row 2 (value 1 for pawn)
       DO 20 J=1,8
         BOARD(2,J)=1
    20 CONTINUE
 
-C SUM holds net material (assuming positive for white, negative for black)
       SUM=0
       DO 30 I=1,8
         DO 30 J=1,8

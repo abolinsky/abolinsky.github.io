@@ -8,3 +8,4 @@ hugo server
 git add .
 git commit -m "your message"  # pre-commit hook builds site automatically
 git push
+

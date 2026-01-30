@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI is the New Compiler | abolinsky</title>
+  <meta name="description" content="My home base">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://abolinsky.io/css/style.css">
+</head>
+
+<body>
+  <nav>
+  
+  
+    
+  
+
+  <div class="nav-links">
+    <a href="/">home</a>
+    <span class="active">blog</span>
+    <a href="/bookshelf/">bookshelf</a>
+  </div>
+  <button class="theme-toggle" onclick="toggleTheme()"></button>
+</nav>
+
+  <main>
+    
+
+<div class="post-nav">
+  <a href="/blog/">top</a>
+  <a href="https://abolinsky.io/blog/nepal-wedding/">older</a>
+  
+</div>
+
+<article>
+  <h1>AI is the New Compiler</h1>
+  <span class="post-date">2026-01-30</span>
+  <p>In the 1950s, the introduction of the first mainstream compiler, FORTRAN, released by IBM in 1957, revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.</p>
+<p>To illustrate, consider implementing a chess engine—a showcase of human creativity involving strategy, evaluation functions, and search algorithms.</p>
+<p>Before compilers, programmers hand-wrote assembly code directly manipulating hardware registers and memory, as in this illustrative example adapted from the Bernstein Chess Program on the IBM 704. Here&rsquo;s a snippet of board initialization and a simplified move evaluation (the full program was thousands of instructions):</p>
+<pre tabindex="0"><code>; Assume BOARD is an array of 64 words starting at address 1000
+
+CLA ZERO      ; Clear accumulator
+LXD =64,1     ; Load index register 1 with 64 (number of squares)
+INITLOOP:
+STO 1000,1    ; Store 0 to BOARD + index (clear board)
+TIX INITLOOP,1,1 ; Decrement index and loop if &gt;0
+
+; Set up white pawns (illustrative, pawn value = 1)
+CLA ONE
+LXD =8,1      ; 8 pawns on row 2 (addresses 1008-1015 approx.)
+PAWNLOOP:
+STO 1008,1    ; Store 1 to pawn positions
+TIX PAWNLOOP,1,1
+
+; Simplified move evaluation: sum material (positive for white pieces)
+CLA ZERO
+LXD =64,1
+EVALLOOP:
+ADD 1000,1    ; Add board square value to accumulator
+TIX EVALLOOP,1,1
+; Accumulator now holds net material score
+</code></pre><p>This required deep knowledge of the 704&rsquo;s 36-bit architecture, index registers, and manual optimization for vacuum-tube speed.</p>
+<p>With the advent of compilers like FORTRAN for the IBM 704, programmers could express logic through arrays and loops, shifting their focus to algorithms rather than hardware intricacies:</p>
+<pre tabindex="0"><code>C Board initialization and move evaluation
+
+      DIMENSION BOARD(8,8)
+      DO 10 I=1,8
+        DO 10 J=1,8
+          BOARD(I,J)=0
+   10 CONTINUE
+
+C Set white pawns on row 2 (value 1 for pawn)
+      DO 20 J=1,8
+        BOARD(2,J)=1
+   20 CONTINUE
+
+C Simplified evaluation: sum material
+      SUM=0
+      DO 30 I=1,8
+        DO 30 J=1,8
+          SUM = SUM + BOARD(I,J)
+   30 CONTINUE
+C SUM holds net material (assuming positive for white, negative for black)
+</code></pre><p>The specifics of the computer are gone. Eventually the compiler could target a variety of hardware and hide those details from the developer.</p>
+<p>With AI, the &ldquo;code&rdquo; is a natural language prompt:</p>
+<p>&ldquo;Write a complete chess engine in Python that can play against a human via console input, implementing minimax with alpha-beta pruning to depth 4, evaluating based on material, mobility, and king safety, with a standard 8x8 board representation and full rule enforcement including castling, en passant, and checkmate detection.&rdquo;</p>
+<p>Both the compiler and AI act as black boxes: compilers transform high-level code into machine instructions through optimization passes, while AI models generate and refine code based on prompts, handling complexities under the hood. Just as the compiler allowed one to write a program in FORTRAN once that could be executed on a variety of hardware, AI is allowing one to write a prompt once, and with just a single word change generate a program in a variety of programming langugaes.</p>
+<p>This abstraction sparked fears back then that compilers would replace skilled programmers and not perform as well<a href="https://www.ibm.com/history/fortran#:~:text=Fortran%20confounded%20skeptics%20who%20insisted,translated%20Fortran%E2%80%99s%20programs%20into%20the%C2%A0IBM%C2%A0704%E2%80%99s" target="_blank" rel="noopener">1</a>, much like today&rsquo;s concerns about AI doing the same. Yet, compilers ultimately boosted productivity enormously, enabling programmers to translate ideas into executable software faster and on a larger scale. Early compilers were simple, often underperforming hand-optimized assembly by talented engineers familiar with the hardware. They had bugs and inefficiencies, but over time, they surpassed human efforts in optimization and reliability. AI follows a similar path: initial tools may not always outperform experts and can introduce errors, but studies show productivity gains of 20-50%<a href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic" target="_blank" rel="noopener">2</a> in code generation and debugging for many teams. However, for experienced developers on complex tasks, especially for more niche subjects that are under-represented in AI training data, AI can sometimes slow progress by requiring more review and intervention.</p>
+<p>At the end of the day, both tools amplify human capability rather than replace it. Compilers didn&rsquo;t end programming; they expanded it. AI does the same, provided developers cultivate timeless skills: design thinking, problem-solving, continuous learning, communication, adaptability, analytical thinking, and self-regulation. These ensure we wield the tool effectively, turning higher abstractions into innovative software. Just like the compiler before it, AI is democratizing software development, lowering the barrier to entry and enabling more direct expression of human creativity, allowing a wider array of people to translate their ideas into functional code without needing deep technical expertise in programming languages or syntax.</p>
+
+</article>
+
+  </main>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+
+    
+    (function() {
+      const main = document.querySelector('main');
+      if (!main) return;
+
+      
+      main.querySelectorAll('a').forEach(a => a.classList.add('typing-hidden'));
+      main.querySelectorAll('img, iframe').forEach(el => el.classList.add('typing-hidden'));
+      main.querySelectorAll('li').forEach(li => li.classList.add('typing-hidden'));
+
+      
+      const items = [];
+      const walker = document.createTreeWalker(main, NodeFilter.SHOW_ALL, {
+        acceptNode: function(node) {
+          if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          if (node.nodeType === Node.ELEMENT_NODE && (node.tagName === 'IMG' || node.tagName === 'IFRAME')) {
+            return NodeFilter.FILTER_ACCEPT;
+          }
+          return NodeFilter.FILTER_SKIP;
+        }
+      }, false);
+
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (node.nodeType === Node.TEXT_NODE) {
+          items.push({
+            type: 'text',
+            node: node,
+            text: node.textContent,
+            parent: node.parentElement
+          });
+        } else {
+          items.push({
+            type: 'media',
+            node: node
+          });
+        }
+      }
+
+      
+      items.forEach(item => {
+        if (item.type === 'text') item.node.textContent = '';
+      });
+
+      
+      let itemIndex = 0;
+      let charIndex = 0;
+      const speed = 5; 
+
+      function type() {
+        if (itemIndex >= items.length) return;
+
+        const current = items[itemIndex];
+
+        if (current.type === 'media') {
+          current.node.classList.remove('typing-hidden');
+          itemIndex++;
+          setTimeout(type, speed);
+          return;
+        }
+
+        
+        if (charIndex === 0 && current.parent && current.parent.tagName === 'A') {
+          current.parent.classList.remove('typing-hidden');
+        }
+
+        
+        if (charIndex === 0) {
+          const li = current.node.parentElement?.closest('li');
+          if (li) li.classList.remove('typing-hidden');
+        }
+
+        if (charIndex < current.text.length) {
+          current.node.textContent += current.text[charIndex];
+          charIndex++;
+          setTimeout(type, speed);
+        } else {
+          itemIndex++;
+          charIndex = 0;
+          setTimeout(type, speed);
+        }
+      }
+
+      type();
+    })();
+  </script>
+</body>
+</html>

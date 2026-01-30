@@ -6,8 +6,15 @@
     <description>Recent content on abolinsky</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://abolinsky.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI is the New Compiler</title>
+      <link>https://abolinsky.io/blog/ai-compiler/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://abolinsky.io/blog/ai-compiler/</guid>
+      <description>&lt;p&gt;In the 1950s, the introduction of the first mainstream compiler, FORTRAN, released by IBM in 1957, revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Complete Nepali</title>
       <link>https://abolinsky.io/bookshelf/complete-nepali/</link>

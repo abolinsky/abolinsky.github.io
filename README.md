@@ -1,11 +1,10 @@
 # abolinsky.github.io
-Personal web page at www.abolinsky.io
+My personal web page.
 
 ## run
+```
 hugo server
+```
 
 ## deploy
-git add .
-git commit -m "your message"  # pre-commit hook builds site automatically
-git push
-
+Pre-commit hook will build. Just push.

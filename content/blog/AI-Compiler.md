@@ -3,52 +3,74 @@ title = "AI is the New Compiler"
 date = 2026-01-30
 +++
 
-In 1957, IBM introduced the first mainstream compiler, FORTRAN, and revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
+In 1957, IBM introduced the first mainstream compiler for the FORTRAN language and revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe their intent in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
 
-To illustrate, consider implementing a chess engine—a showcase of human creativity involving strategy, evaluation functions, and search algorithms.
+To illustrate, consider implementing a chess engine.
 
-Before compilers, programmers hand-wrote assembly code directly manipulating hardware registers and memory, as in this illustrative example adapted from the Bernstein Chess Program on the IBM 704. Here's a snippet of board initialization and a simplified move evaluation (the full program was thousands of instructions):
-
-```
-CLA ZERO
-LXD =64,1
-INITLOOP:
-STO 1000,1
-TIX INITLOOP,1,1
-
-CLA ONE
-LXD =8,1
-PAWNLOOP:
-STO 1008,1
-TIX PAWNLOOP,1,1
-
-CLA ZERO
-LXD =64,1
-EVALLOOP:
-ADD 1000,1
-TIX EVALLOOP,1,1
-```
-
-This required deep knowledge of the 704's 36-bit architecture, index registers, and manual optimization for vacuum-tube speed.
-
-With the advent of compilers like FORTRAN for the IBM 704, programmers could express logic more naturally, shifting their focus to algorithms rather than hardware intricacies:
+Before compilers, programmers hand-wrote assembly code directly manipulating hardware registers and memory, as in this illustrative example of code written for the IBM 704, the computer for which FORTRAN was developed.
 
 ```
-      DIMENSION BOARD(8,8)
-      DO 10 I=1,8
-        DO 10 J=1,8
-          BOARD(I,J)=0
-   10 CONTINUE
+       LXD B2,1
+       LXD B3,2
+RDBCD  CPY L
+       TXL B1
+       TRA 2,4
+B1     STQ LS
+       SXD B2,1
+       SXD B3,2
+       LXD B4,1
+       CPY R
+       STQ RS
+       TSX C1,2
+B2     TXL B5
+       ALS 1
+B3     TXL C2
+B5     CPY 8L
+       STQ LS
+       CPY 8R
+       STQ RS
+       TSX C1,2
+B4     TXL B6,0,8
+       ALS 3
+       TXL C3
+B6     CAL L
+       SLW LS
+       CAL R
+```
 
-      DO 20 J=1,8
-        BOARD(2,J)=1
-   20 CONTINUE
+This required deep knowledge of the 704's 36-bit architecture, index registers, and manual optimization for vacuum-tube speed. It also required a lot of patience, as even smaller programs took many lines of instructions!
 
-      SUM=0
-      DO 30 I=1,8
-        DO 30 J=1,8
-          SUM = SUM + BOARD(I,J)
-   30 CONTINUE
+With the advent of compilers like FORTRAN, programmers could express logic more naturally and move away from hardware intricacies:
+
+```
+      SUBROUTINE MAKEMOVE(BOARD, FROM, TO, CAPTURED)
+      INTEGER BOARD(8,8), FROM, TO, CAPTURED
+      INTEGER RF, CF, RT, CT, PIECE
+      RF = FROM / 8 + 1
+      CF = MOD(FROM, 8) + 1
+      RT = TO / 8 + 1
+      CT = MOD(TO, 8) + 1
+      CAPTURED = BOARD(RT, CT)
+      PIECE = BOARD(RF, CF)
+      BOARD(RT, CT) = PIECE
+      BOARD(RF, CF) = 0
+      IF (IABS(PIECE) .EQ. PAWN .AND. (RT .EQ. 1 .OR. RT .EQ. 8)) THEN
+        BOARD(RT, CT) = ISIGN(QUEEN, PIECE)
+      END IF
+      RETURN
+      END
+
+      SUBROUTINE UNMAKEMOVE(BOARD, FROM, TO, CAPTURED)
+      INTEGER BOARD(8,8), FROM, TO, CAPTURED
+      INTEGER RF, CF, RT, CT
+      RF = FROM / 8 + 1
+      CF = MOD(FROM, 8) + 1
+      RT = TO / 8 + 1
+      CT = MOD(TO, 8) + 1
+      BOARD(RF, CF) = BOARD(RT, CT)
+      BOARD(RT, CT) = CAPTURED
+      RETURN
+      END
 ```
 
 The specifics of the computer are gone. Eventually the compiler could target a variety of hardware and hide those details from the developer.
@@ -68,3 +90,4 @@ This abstraction sparked fears back then that compilers would replace skilled pr
 At the end of the day, both tools amplify human capability rather than replace it. Compilers didn't end programming; they expanded it. AI does the same, provided developers continue to cultivate timeless skills in parallel: design thinking, problem-solving, continuous learning, communication, adaptability, analytical thinking, and self-regulation. These ensure we wield the tool effectively and are able to effectively innovative atop this new higher level of abstraction.
 
 Just like the compiler before it, AI is democratizing software development, lowering the barrier to entry and enabling more direct expression of human creativity.
+

@@ -29,6 +29,7 @@ html {
 body {
   font-family: "VT323", "DotGothic16", monospace;
   font-size: 1.2rem;
+  font-variant-ligatures: none;
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.4;
@@ -212,6 +213,10 @@ footer a:hover {
 }
 
 /* Code blocks */
+pre, code {
+  font-family: inherit;
+}
+
 pre {
   background-color: var(--border);
   padding: 1rem;

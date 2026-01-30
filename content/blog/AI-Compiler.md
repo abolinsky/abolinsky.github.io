@@ -3,7 +3,7 @@ title = "AI is the New Compiler"
 date = 2026-01-30
 +++
 
-In the 1950s, the introduction of the first mainstream compiler, FORTRAN, released by IBM in 1957, revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
+In the 1957, IBM introduced the first mainstream compiler, FORTRAN, and revolutionized software development. It allowed programmers to work at a higher level of abstraction, shifting from writing the individual instructions that the computer would execute to more human-readable expressions of intent. Similarly, modern AI tools like GitHub Copilot and Claude Code enable developers to describe problems in completely natural language, further abstracting developers away from the syntax of a programming language and low-level coding details.
 
 To illustrate, consider implementing a chess engine—a showcase of human creativity involving strategy, evaluation functions, and search algorithms.
 
@@ -11,7 +11,6 @@ Before compilers, programmers hand-wrote assembly code directly manipulating har
 
 ```
 ; Assume BOARD is an array of 64 words starting at address 1000
-
 CLA ZERO      ; Clear accumulator
 LXD =64,1     ; Load index register 1 with 64 (number of squares)
 INITLOOP:
@@ -36,11 +35,10 @@ TIX EVALLOOP,1,1
 
 This required deep knowledge of the 704's 36-bit architecture, index registers, and manual optimization for vacuum-tube speed.
 
-With the advent of compilers like FORTRAN for the IBM 704, programmers could express logic through arrays and loops, shifting their focus to algorithms rather than hardware intricacies:
+With the advent of compilers like FORTRAN for the IBM 704, programmers could express logic more naturally, shifting their focus to algorithms rather than hardware intricacies:
 
 ```
 C Board initialization and move evaluation
-
       DIMENSION BOARD(8,8)
       DO 10 I=1,8
         DO 10 J=1,8
@@ -52,13 +50,12 @@ C Set white pawns on row 2 (value 1 for pawn)
         BOARD(2,J)=1
    20 CONTINUE
 
-C Simplified evaluation: sum material
+C SUM holds net material (assuming positive for white, negative for black)
       SUM=0
       DO 30 I=1,8
         DO 30 J=1,8
           SUM = SUM + BOARD(I,J)
    30 CONTINUE
-C SUM holds net material (assuming positive for white, negative for black)
 ```
 
 The specifics of the computer are gone. Eventually the compiler could target a variety of hardware and hide those details from the developer.

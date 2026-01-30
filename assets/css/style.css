@@ -229,6 +229,10 @@ code {
   padding: 0.2rem 0.4rem;
 }
 
+pre code {
+  padding: 0;
+}
+
 /* Lists in content */
 article ul, article ol {
   margin-left: 1.5rem;

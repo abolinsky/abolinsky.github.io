@@ -77,7 +77,9 @@ The specifics of the computer are gone. Eventually the compiler could target a v
 
 With AI, the "code" is a natural language prompt:
 
+```
 "Write a complete chess engine in Python that can play against a human via console input, implementing minimax with alpha-beta pruning to depth 4, evaluating based on material, mobility, and king safety, with a standard 8x8 board representation and full rule enforcement including castling, en passant, and checkmate detection."
+```
 
 Both the compiler and AI act as black boxes: compilers transform high-level code into machine instructions through some complex process of optimization passes, while AI models transform prompts into working programs through some complex process of neural network parameter tuning and inference. In both, the complexities are hidden under the hood. Just as the compiler allowed one to write a program in FORTRAN once that could be executed on a variety of hardware, AI is allowing one to write a prompt once, and with just a single word change generate a program in a variety of programming languages.
 

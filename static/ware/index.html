@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ware</title>
+  <meta name="description" content="Build a game console from relays up, then make games to play with your friends: a game about how computers really work, in development.">
+  <meta property="og:title" content="ware">
+  <meta property="og:description" content="Build a game console from relays up, then make games to play with your friends: a game about how computers really work, in development.">
+  <meta property="og:image" content="https://abolinsky.io/ware/poster.png">
+  <meta property="og:url" content="https://abolinsky.io/ware/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --desk: #3a4250;      /* the desk's slate paint */
+      --desk-dark: #2a303b;
+      --mat: #1f4a35;       /* the cutting mat */
+      --cream: #f1e6c8;
+      --ink: #1a1a20;
+      --label: #f7f6f0;
+      --yellow: #f2c14e;    /* the Levels bookmark */
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: var(--desk); }
+    body {
+      font-family: "DotGothic16", monospace;
+      color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 48px 16px 64px;
+      background:
+        radial-gradient(ellipse at 30% 0%, rgba(255, 230, 180, 0.08), transparent 60%),
+        var(--desk);
+    }
+    main { width: 100%; max-width: 960px; min-width: 0; }  /* or the video's own width stretches it */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin: 12px 0 44px;
+    }
+    /* the logo, pixel art drawn small and scaled up crisply */
+    .logo {
+      width: min(560px, 88vw);
+      height: auto;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+    .status {
+      font-size: 18px;
+      color: var(--yellow);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .story { max-width: 720px; margin: 40px auto 0; }
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    /* the video under the magnifier's thin black frame, on the mat */
+    .screen {
+      background: var(--mat);
+      padding: 14px;
+      border-radius: 12px;
+      box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.35);
+    }
+    video {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 6px solid var(--ink);
+      border-radius: 8px;
+      background: var(--desk-dark);
+    }
+    @media (max-width: 560px) {
+      body { padding-top: 32px; }
+      p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1><img class="logo" src="logo.png" alt="ware"></h1>
+      <div class="status">in development</div>
+    </header>
+    <div class="screen">
+      <video src="ware-promo.mp4" poster="poster.png" autoplay muted loop playsinline controls></video>
+    </div>
+    <div class="story">
+      <p>It's the early 2000s, and all your friends are talking about video games. Your parents won't buy you a console, but they've made you a deal: build one yourself, and it's yours to keep.</p>
+      <p>Walt, the retired ham radio operator down the street, has lent you a pair of walkie-talkies and offered to talk you through it. He'll explain why things work before you build them, but he won't hand you the answers.</p>
+      <p>Starting from relays, you wire up logic gates, then adders, memory and a CPU of your own, and finally a handheld console. Then you write the games, flash them onto cartridges and link up to play with your friend across the street.</p>
+      <p>By the end you'll understand how a computer works, from the hardware up through the software, with skills that carry over to the real thing. No experience needed.</p>
+    </div>
+  </main>
+</body>
+</html>

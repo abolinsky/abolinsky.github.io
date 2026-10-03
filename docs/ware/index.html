@@ -50,12 +50,7 @@
       image-rendering: pixelated;
       image-rendering: crisp-edges;
     }
-    .status {
-      font-size: 20px;
-      color: var(--yellow);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
+    .status { font-size: 20px; line-height: 1.6; }  /* like the story's text */
     .story { max-width: 720px; margin: 40px auto 0; padding: 0 40px; }
     p {
       font-size: 20px;
@@ -75,7 +70,7 @@
     }
     @media (max-width: 560px) {
       body { padding-top: 32px; }
-      p { font-size: 18px; }
+      p, .status { font-size: 18px; }
       .story { padding: 0 16px; }
     }
   </style>

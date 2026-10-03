@@ -17,7 +17,6 @@
     :root {
       --desk: #3a4250;      /* the desk's slate paint */
       --desk-dark: #2a303b;
-      --mat: #1f4a35;       /* the cutting mat */
       --cream: #f1e6c8;
       --ink: #1a1a20;
       --label: #f7f6f0;
@@ -57,19 +56,13 @@
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-    .story { max-width: 720px; margin: 40px auto 0; }
+    .story { max-width: 720px; margin: 40px auto 0; padding: 0 40px; }
     p {
       font-size: 20px;
       line-height: 1.6;
       margin-bottom: 18px;
     }
-    /* the video under the magnifier's thin black frame, on the mat */
-    .screen {
-      background: var(--mat);
-      padding: 14px;
-      border-radius: 12px;
-      box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.35);
-    }
+    /* the video in the magnifier's thin black frame */
     video {
       display: block;
       width: 100%;
@@ -78,10 +71,12 @@
       border: 6px solid var(--ink);
       border-radius: 8px;
       background: var(--desk-dark);
+      box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.35);
     }
     @media (max-width: 560px) {
       body { padding-top: 32px; }
       p { font-size: 18px; }
+      .story { padding: 0 16px; }
     }
   </style>
 </head>
